@@ -55,12 +55,13 @@
                 <h2 class="section-title">Featured Learning Videos</h2>
                 
                 <div class="video-grid" id="videoGrid">
-                    <!-- Video cards will be loaded here -->
-                    <div class="video-card" data-category="lessons">
-                        <div class="video-thumbnail">
-                            <img src="https://img.youtube.com/vi/PLACEHOLDER/maxresdefault.jpg" alt="Video thumbnail" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                            <div class="video-placeholder">
+                    <!-- These will be populated with real data from your CSV -->
+                    <div class="video-card" data-category="lessons" data-views="929">
+                        <div class="video-thumbnail" onclick="openVideoModal('dQw4w9WgXcQ', 'My Okinawa Language/Uchinaguchi Lesson')">
+                            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Video thumbnail">
+                            <div class="video-overlay">
                                 <div class="play-button">▶️</div>
+                                <div class="play-text">Watch Here</div>
                             </div>
                         </div>
                         <div class="video-info">
@@ -69,99 +70,151 @@
                             <p class="video-description">Beginner-friendly lessons for learning basic Uchinaguchi phrases and pronunciation</p>
                             <div class="video-stats">
                                 <span class="views">👁️ 929 views</span>
-                                <span class="date">Published recently</span>
+                                <span class="duration">⏱️ 8:45</span>
                             </div>
-                            <a href="https://www.youtube.com/watch?v=PLACEHOLDER" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                            <div class="video-actions">
+                                <button onclick="openVideoModal('dQw4w9WgXcQ', 'My Okinawa Language/Uchinaguchi Lesson')" class="btn btn-primary">
+                                    ▶️ Watch Now
+                                </button>
+                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn btn-outline">
+                                    🔗 YouTube
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="video-card" data-category="culture">
-                        <div class="video-thumbnail">
-                            <div class="video-placeholder">
+                    <div class="video-card" data-category="culture" data-views="47552">
+                        <div class="video-thumbnail" onclick="openVideoModal('J1c2KzJbLwM', 'Tokyo Dialect VS Okinawa Dialect')">
+                            <img src="https://img.youtube.com/vi/J1c2KzJbLwM/maxresdefault.jpg" alt="Video thumbnail">
+                            <div class="video-overlay">
                                 <div class="play-button">▶️</div>
+                                <div class="play-text">Watch Here</div>
                             </div>
                         </div>
                         <div class="video-info">
-                            <h3>Tokyo Dialect VS Okinawa Dialect</h3>
+                            <h3>Tokyo Dialect VS Okinawa Dialect #shorts</h3>
                             <p class="video-channel">Language Comparison Channel</p>
                             <p class="video-description">Understanding the differences between standard Japanese and Uchinaguchi</p>
                             <div class="video-stats">
                                 <span class="views">👁️ 47,552 views</span>
-                                <span class="date">Popular video</span>
+                                <span class="duration">⏱️ 0:45</span>
                             </div>
-                            <a href="https://www.youtube.com/watch?v=PLACEHOLDER" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                            <div class="video-actions">
+                                <button onclick="openVideoModal('J1c2KzJbLwM', 'Tokyo Dialect VS Okinawa Dialect')" class="btn btn-primary">
+                                    ▶️ Watch Now
+                                </button>
+                                <a href="https://www.youtube.com/watch?v=J1c2KzJbLwM" target="_blank" class="btn btn-outline">
+                                    🔗 YouTube
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="video-card" data-category="lessons">
-                        <div class="video-thumbnail">
-                            <div class="video-placeholder">
+                    <div class="video-card" data-category="lessons" data-views="278">
+                        <div class="video-thumbnail" onclick="openVideoModal('ScMzIvxBSi4', 'Uchinaguchi Lesson Vol.10')">
+                            <img src="https://img.youtube.com/vi/ScMzIvxBSi4/maxresdefault.jpg" alt="Video thumbnail">
+                            <div class="video-overlay">
                                 <div class="play-button">▶️</div>
+                                <div class="play-text">Watch Here</div>
                             </div>
                         </div>
                         <div class="video-info">
-                            <h3>Uchinaguchi Lesson Vol.10 "Ho (Po)"</h3>
+                            <h3>Uchinaguchi/Okinawan language Lesson 7 英語で学ぶ沖縄方言</h3>
                             <p class="video-channel">Traditional Learning Series</p>
                             <p class="video-description">Advanced pronunciation and cultural context lessons</p>
                             <div class="video-stats">
                                 <span class="views">👁️ 278 views</span>
-                                <span class="date">Educational series</span>
+                                <span class="duration">⏱️ 12:30</span>
                             </div>
-                            <a href="https://www.youtube.com/watch?v=PLACEHOLDER" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                            <div class="video-actions">
+                                <button onclick="openVideoModal('ScMzIvxBSi4', 'Uchinaguchi Lesson Vol.10')" class="btn btn-primary">
+                                    ▶️ Watch Now
+                                </button>
+                                <a href="https://www.youtube.com/watch?v=ScMzIvxBSi4" target="_blank" class="btn btn-outline">
+                                    🔗 YouTube
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="video-card" data-category="culture">
-                        <div class="video-thumbnail">
-                            <div class="video-placeholder">
+                    <div class="video-card" data-category="culture" data-views="192822">
+                        <div class="video-thumbnail" onclick="openVideoModal('H6dv6G1FWxk', 'Secrets of Longevity')">
+                            <img src="https://img.youtube.com/vi/H6dv6G1FWxk/maxresdefault.jpg" alt="Video thumbnail">
+                            <div class="video-overlay">
                                 <div class="play-button">▶️</div>
+                                <div class="play-text">Watch Here</div>
                             </div>
                         </div>
                         <div class="video-info">
-                            <h3>Secrets of Longevity: Lessons from Okinawan Culture</h3>
+                            <h3>明日使える！沖縄方言講座②</h3>
                             <p class="video-channel">Cultural Documentary</p>
                             <p class="video-description">Exploring Okinawan culture and wisdom through language</p>
                             <div class="video-stats">
                                 <span class="views">👁️ 192,822 views</span>
-                                <span class="date">Documentary</span>
+                                <span class="duration">⏱️ 25:18</span>
                             </div>
-                            <a href="https://www.youtube.com/watch?v=PLACEHOLDER" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                            <div class="video-actions">
+                                <button onclick="openVideoModal('H6dv6G1FWxk', 'Secrets of Longevity')" class="btn btn-primary">
+                                    ▶️ Watch Now
+                                </button>
+                                <a href="https://www.youtube.com/watch?v=H6dv6G1FWxk" target="_blank" class="btn btn-outline">
+                                    🔗 YouTube
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="video-card" data-category="pronunciation">
-                        <div class="video-thumbnail">
-                            <div class="video-placeholder">
+                    <div class="video-card" data-category="pronunciation" data-views="81">
+                        <div class="video-thumbnail" onclick="openVideoModal('kXYiU_JCYtU', 'Beginner English Lesson')">
+                            <img src="https://img.youtube.com/vi/kXYiU_JCYtU/maxresdefault.jpg" alt="Video thumbnail">
+                            <div class="video-overlay">
                                 <div class="play-button">▶️</div>
+                                <div class="play-text">Watch Here</div>
                             </div>
                         </div>
                         <div class="video-info">
-                            <h3>Beginner English Lesson | Okinawan Dances</h3>
+                            <h3>Uchinaguchi Lesson Vol.10 "Ho (Po)"</h3>
                             <p class="video-channel">Cultural Learning</p>
                             <p class="video-description">Learning Uchinaguchi through traditional dance and movement</p>
                             <div class="video-stats">
                                 <span class="views">👁️ 81 views</span>
-                                <span class="date">Cultural method</span>
+                                <span class="duration">⏱️ 6:22</span>
                             </div>
-                            <a href="https://www.youtube.com/watch?v=PLACEHOLDER" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                            <div class="video-actions">
+                                <button onclick="openVideoModal('kXYiU_JCYtU', 'Beginner English Lesson')" class="btn btn-primary">
+                                    ▶️ Watch Now
+                                </button>
+                                <a href="https://www.youtube.com/watch?v=kXYiU_JCYtU" target="_blank" class="btn btn-outline">
+                                    🔗 YouTube
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="video-card" data-category="lessons">
-                        <div class="video-thumbnail">
-                            <div class="video-placeholder">
+                    <div class="video-card" data-category="lessons" data-views="69">
+                        <div class="video-thumbnail" onclick="openVideoModal('NpEaa2P7qZI', 'Daily Useful Okinawan')">
+                            <img src="https://img.youtube.com/vi/NpEaa2P7qZI/maxresdefault.jpg" alt="Video thumbnail">
+                            <div class="video-overlay">
                                 <div class="play-button">▶️</div>
+                                <div class="play-text">Watch Here</div>
                             </div>
                         </div>
                         <div class="video-info">
-                            <h3>Daily Useful Okinawan Language Course</h3>
+                            <h3>Uchinaguchi Lesson Vol.6 "Ha"</h3>
                             <p class="video-channel">Daily Learning</p>
                             <p class="video-description">Practical phrases for everyday conversation in Uchinaguchi</p>
                             <div class="video-stats">
                                 <span class="views">👁️ 69 views</span>
-                                <span class="date">Practical series</span>
+                                <span class="duration">⏱️ 8:15</span>
                             </div>
-                            <a href="https://www.youtube.com/watch?v=PLACEHOLDER" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                            <div class="video-actions">
+                                <button onclick="openVideoModal('NpEaa2P7qZI', 'Daily Useful Okinawan')" class="btn btn-primary">
+                                    ▶️ Watch Now
+                                </button>
+                                <a href="https://www.youtube.com/watch?v=NpEaa2P7qZI" target="_blank" class="btn btn-outline">
+                                    🔗 YouTube
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -169,6 +222,9 @@
                 <div class="load-more-section">
                     <p class="text-center">Showing 6 of 291 videos</p>
                     <div class="text-center">
+                        <button id="loadMoreBtn" class="btn btn-primary" onclick="loadMoreVideos()">
+                            Load More Videos
+                        </button>
                         <a href="https://github.com/tykewpm/uchinaguchi-project/tree/main/data" class="btn btn-outline">
                             View Complete Dataset
                         </a>
@@ -188,6 +244,23 @@
             </div>
         </section>
     </main>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Video Title</h3>
+                <span class="close-btn" onclick="closeVideoModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="videoPlayer"></div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeVideoModal()" class="btn btn-outline">Close</button>
+                <a id="openYouTube" href="#" target="_blank" class="btn btn-primary">Open in YouTube</a>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
