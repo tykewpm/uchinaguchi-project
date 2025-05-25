@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Library - Uchinaguchi Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">🌺 Uchinaguchi Project</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="dictionary.html">Dictionary</a></li>
+                    <li><a href="phrasebook.html">Phrasebook</a></li>
+                    <li><a href="academic.html">Academic</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main style="margin-top: 70px;">
+        <!-- Page Header -->
+        <section class="section bg-light">
+            <div class="container">
+                <h1 class="section-title">Uchinaguchi Video Library</h1>
+                <p class="section-description">
+                    291 carefully curated YouTube videos covering Uchinaguchi lessons, culture, pronunciation, and more
+                </p>
+                
+                <!-- Filter Options -->
+                <div class="filter-section">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All Videos (291)</button>
+                        <button class="filter-btn" data-filter="lessons">Lessons</button>
+                        <button class="filter-btn" data-filter="culture">Culture</button>
+                        <button class="filter-btn" data-filter="pronunciation">Pronunciation</button>
+                        <button class="filter-btn" data-filter="songs">Songs</button>
+                    </div>
+                    
+                    <div class="search-box">
+                        <input type="text" id="videoSearch" placeholder="Search videos..." />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Videos -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Learning Videos</h2>
+                
+                <div class="video-grid" id="videoGrid">
+                    <!-- Video cards will be loaded here -->
+                    <div class="video-card" data-category="lessons">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/PLACEHOLDER/maxresdefault.jpg" alt="Video thumbnail" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="video-placeholder">
+                                <div class="play-button">▶️</div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>My Okinawa Language/Uchinaguchi Lesson</h3>
+                            <p class="video-channel">Uchinaguchi Study Group</p>
+                            <p class="video-description">Beginner-friendly lessons for learning basic Uchinaguchi phrases and pronunciation</p>
+                            <div class="video-stats">
+                                <span class="views">👁️ 929 views</span>
+                                <span class="date">Published recently</span>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=PLACEHOLDER" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                        </div>
+                    </div>
+
+                    <div class="video-card" data-category="culture">
+                        <div class="video-thumbnail">
+                            <div class="video-placeholder">
+                                <div class="play-button">▶️</div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Tokyo Dialect VS Okinawa Dialect</h3>
+                            <p class="video-channel">Language Comparison Channel</p>
+                            <p class="video-description">Understanding the differences between standard Japanese and Uchinaguchi</p>
+                            <div class="video-stats">
+                                <span class="views">👁️ 47,552 views</span>
+                                <span class="date">Popular video</span>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=PLACEHOLDER" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                        </div>
+                    </div>
+
+                    <div class="video-card" data-category="lessons">
+                        <div class="video-thumbnail">
+                            <div class="video-placeholder">
+                                <div class="play-button">▶️</div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Uchinaguchi Lesson Vol.10 "Ho (Po)"</h3>
+                            <p class="video-channel">Traditional Learning Series</p>
+                            <p class="video-description">Advanced pronunciation and cultural context lessons</p>
+                            <div class="video-stats">
+                                <span class="views">👁️ 278 views</span>
+                                <span class="date">Educational series</span>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=PLACEHOLDER" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                        </div>
+                    </div>
+
+                    <div class="video-card" data-category="culture">
+                        <div class="video-thumbnail">
+                            <div class="video-placeholder">
+                                <div class="play-button">▶️</div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Secrets of Longevity: Lessons from Okinawan Culture</h3>
+                            <p class="video-channel">Cultural Documentary</p>
+                            <p class="video-description">Exploring Okinawan culture and wisdom through language</p>
+                            <div class="video-stats">
+                                <span class="views">👁️ 192,822 views</span>
+                                <span class="date">Documentary</span>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=PLACEHOLDER" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                        </div>
+                    </div>
+
+                    <div class="video-card" data-category="pronunciation">
+                        <div class="video-thumbnail">
+                            <div class="video-placeholder">
+                                <div class="play-button">▶️</div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Beginner English Lesson | Okinawan Dances</h3>
+                            <p class="video-channel">Cultural Learning</p>
+                            <p class="video-description">Learning Uchinaguchi through traditional dance and movement</p>
+                            <div class="video-stats">
+                                <span class="views">👁️ 81 views</span>
+                                <span class="date">Cultural method</span>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=PLACEHOLDER" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                        </div>
+                    </div>
+
+                    <div class="video-card" data-category="lessons">
+                        <div class="video-thumbnail">
+                            <div class="video-placeholder">
+                                <div class="play-button">▶️</div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Daily Useful Okinawan Language Course</h3>
+                            <p class="video-channel">Daily Learning</p>
+                            <p class="video-description">Practical phrases for everyday conversation in Uchinaguchi</p>
+                            <div class="video-stats">
+                                <span class="views">👁️ 69 views</span>
+                                <span class="date">Practical series</span>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=PLACEHOLDER" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="load-more-section">
+                    <p class="text-center">Showing 6 of 291 videos</p>
+                    <div class="text-center">
+                        <a href="https://github.com/tykewpm/uchinaguchi-project/tree/main/data" class="btn btn-outline">
+                            View Complete Dataset
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="cta-section">
+                    <h2>Help Us Expand This Collection</h2>
+                    <p>Know of a great Uchinaguchi video that's not in our collection? Submit it for review!</p>
+                    <a href="mailto:contribute@uchinaguchiproject.org" class="btn btn-primary">Submit Video</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌺 Uchinaguchi Project</h3>
+                    <p>Preserving and revitalizing the Okinawan language through digital collaboration.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="videos.html">Video Library</a></li>
+                        <li><a href="dictionary.html">Dictionary</a></li>
+                        <li><a href="phrasebook.html">Phrasebook</a></li>
+                        <li><a href="academic.html">Academic Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="https://github.com/tykewpm/uchinaguchi-project">GitHub</a></li>
+                        <li><a href="mailto:contact@uchinaguchiproject.org">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Uchinaguchi Project. Open source under MIT License.</p>
+                <p><em>Ichariba choodee</em> (Once we meet, we are family) 🌺</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/videos.js"></script>
+</body>
+</html>
