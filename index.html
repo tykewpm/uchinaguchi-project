@@ -11,12 +11,12 @@
     <header class="header">
         <nav class="nav">
             <div class="nav-container">
-                <a href="#" class="logo">🌺 Uchinaguchi Project</a>
+                <a href="index.html" class="logo">🌺 Uchinaguchi Project</a>
                 <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#resources">Resources</a></li>
                     <li><a href="#videos">Videos</a></li>
-                    <li><a href="#dictionary">Dictionary</a></li>
+                    <li><a href="dictionary.html">Dictionary</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contribute">Contribute</a></li>
                 </ul>
@@ -38,7 +38,7 @@
                     </p>
                     <div class="hero-buttons">
                         <a href="#resources" class="btn btn-primary">Explore Resources</a>
-                        <a href="#videos" class="btn btn-secondary">Watch Videos</a>
+                        <a href="videos.html" class="btn btn-secondary">Watch Videos</a>
                     </div>
                 </div>
                 <div class="hero-stats">
@@ -128,31 +128,61 @@
             <div class="container">
                 <h2 class="section-title">Featured Learning Videos</h2>
                 <div class="video-grid">
-                    <div class="video-card">
-                        <div class="video-thumbnail">
-                            <div class="play-button">▶️</div>
+                    <div class="video-card" data-category="lessons">
+                        <div class="video-thumbnail" onclick="openVideoModal('yxrPPKLoc6Ww', 'My Okinawa language/Uchinaguchi Lesson in VIETNAMESE')">
+                            <img src="https://img.youtube.com/vi/yxrPPKLoc6Ww/maxresdefault.jpg" alt="Uchinaguchi lesson in Vietnamese">
+                            <div class="video-overlay">
+                                <div class="play-button">▶️</div>
+                                <div class="play-text">Watch Here</div>
+                            </div>
                         </div>
-                        <h3>Uchinaguchi Study Group</h3>
-                        <p>Weekly lessons for beginners learning Okinawan language</p>
-                        <span class="video-stats">👁️ 929 views</span>
+                        <div class="video-info">
+                            <h3>My Okinawa language/Uchinaguchi Lesson in VIETNAMESE</h3>
+                            <p class="video-channel">MyOkinawaStory</p>
+                            <p class="video-description">Vietnamese language lesson teaching basic Uchinaguchi phrases</p>
+                            <div class="video-stats">
+                                <span class="views">👁️ 117 views</span>
+                                <span class="duration">⏱️ 6:02</span>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="video-card">
-                        <div class="video-thumbnail">
-                            <div class="play-button">▶️</div>
+                    <div class="video-card" data-category="culture">
+                        <div class="video-thumbnail" onclick="openVideoModal('bH5GtdfwPA', 'Secrets of Longevity: Lessons from Okinawan Centenarians')">
+                            <img src="https://img.youtube.com/vi/bH5GtdfwPA/maxresdefault.jpg" alt="Okinawan culture and longevity">
+                            <div class="video-overlay">
+                                <div class="play-button">▶️</div>
+                                <div class="play-text">Watch Here</div>
+                            </div>
                         </div>
-                        <h3>Okinawan vs Tokyo Dialect</h3>
-                        <p>Understanding the differences between Uchinaguchi and Japanese</p>
-                        <span class="video-stats">👁️ 47,552 views</span>
+                        <div class="video-info">
+                            <h3>Secrets of Longevity: Lessons from Okinawan Centenarians</h3>
+                            <p class="video-channel">Vitality Again</p>
+                            <p class="video-description">Exploring Okinawan culture and language through centenarian interviews</p>
+                            <div class="video-stats">
+                                <span class="views">👁️ 192,822 views</span>
+                                <span class="duration">⏱️ 40:01</span>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="video-card">
-                        <div class="video-thumbnail">
-                            <div class="play-button">▶️</div>
+                    <div class="video-card" data-category="pronunciation">
+                        <div class="video-thumbnail" onclick="openVideoModal('lrx7-tv9h-c', 'Let\'s sing Uchinaguchi! Lesson 2')">
+                            <img src="https://img.youtube.com/vi/lrx7-tv9h-c/maxresdefault.jpg" alt="Uchinaguchi singing lesson">
+                            <div class="video-overlay">
+                                <div class="play-button">▶️</div>
+                                <div class="play-text">Watch Here</div>
+                            </div>
                         </div>
-                        <h3>Cultural Context Lessons</h3>
-                        <p>Learn Uchinaguchi through Okinawan culture and traditions</p>
-                        <span class="video-stats">👁️ 278 views</span>
+                        <div class="video-info">
+                            <h3>Let's sing Uchinaguchi! Lesson 2</h3>
+                            <p class="video-channel">Uchinaguchi Learning</p>
+                            <p class="video-description">Learn pronunciation through traditional Okinawan songs</p>
+                            <div class="video-stats">
+                                <span class="views">👁️ 26,496 views</span>
+                                <span class="duration">⏱️ 3:05</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="text-center">
@@ -232,6 +262,23 @@
         </section>
     </main>
 
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Video Title</h3>
+                <span class="close-btn" onclick="closeVideoModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="videoPlayer"></div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeVideoModal()" class="btn btn-outline">Close</button>
+                <a id="openYouTube" href="#" target="_blank" class="btn btn-primary">Open in YouTube</a>
+            </div>
+        </div>
+    </div>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -277,5 +324,76 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        // Enhanced video modal functionality for homepage
+        function openVideoModal(videoId, title) {
+            const modal = document.getElementById('videoModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const videoPlayer = document.getElementById('videoPlayer');
+            const openYouTube = document.getElementById('openYouTube');
+
+            if (!modal || !modalTitle || !videoPlayer || !openYouTube) {
+                // Fallback: open YouTube directly
+                window.open(`https://www.youtube.com/watch?v=${videoId}`, '_blank');
+                return;
+            }
+
+            // Set title
+            modalTitle.textContent = title;
+
+            // Create YouTube embed
+            const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&showinfo=0&controls=1`;
+            videoPlayer.innerHTML = `<iframe 
+                src="${embedUrl}" 
+                allowfullscreen 
+                allow="autoplay; encrypted-media; picture-in-picture"
+                title="${title}"
+                style="width: 100%; height: 100%; border: none;">
+            </iframe>`;
+
+            // Set YouTube link
+            openYouTube.href = `https://www.youtube.com/watch?v=${videoId}`;
+
+            // Show modal
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+
+            // Focus close button for accessibility
+            const closeButton = modal.querySelector('.close-btn');
+            if (closeButton) {
+                closeButton.focus();
+            }
+        }
+
+        function closeVideoModal() {
+            const modal = document.getElementById('videoModal');
+            const videoPlayer = document.getElementById('videoPlayer');
+
+            if (!modal) return;
+
+            // Hide modal
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+
+            // Stop video
+            if (videoPlayer) {
+                videoPlayer.innerHTML = '';
+            }
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeVideoModal();
+            }
+        });
+
+        // Close modal when clicking outside
+        document.getElementById('videoModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeVideoModal();
+            }
+        });
+    </script>
 </body>
 </html>
