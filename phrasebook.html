@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uchinaguchi Phrasebook - Uchinaguchi Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">🌺 Uchinaguchi Project</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="dictionary.html">Dictionary</a></li>
+                    <li><a href="phrasebook.html">Phrasebook</a></li>
+                    <li><a href="academic.html">Academic</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main style="margin-top: 70px;">
+        <!-- Page Header -->
+        <section class="section bg-light">
+            <div class="container">
+                <h1 class="section-title">Uchinaguchi Phrasebook</h1>
+                <p class="section-description">
+                    Essential phrases for everyday conversation in Uchinaguchi (Okinawan language)
+                </p>
+                
+                <!-- Quick Search -->
+                <div class="phrasebook-search">
+                    <input type="text" id="phraseSearch" placeholder="Search phrases..." class="search-input">
+                    <div class="phrase-categories">
+                        <button class="category-btn active" data-category="all">All Phrases</button>
+                        <button class="category-btn" data-category="greetings">Greetings</button>
+                        <button class="category-btn" data-category="basic">Basic</button>
+                        <button class="category-btn" data-category="food">Food</button>
+                        <button class="category-btn" data-category="travel">Travel</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phrase Categories -->
+        <section class="section">
+            <div class="container">
+                <!-- Greetings -->
+                <div class="phrase-section" data-category="greetings">
+                    <h2 class="phrase-category-title">👋 Greetings & Polite Expressions</h2>
+                    <div class="phrase-grid">
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">はいさい</div>
+                            <div class="phrase-romaji">hai sai</div>
+                            <div class="phrase-english">Hello (male)</div>
+                            <button class="play-audio" onclick="playPhrase('hai-sai')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">はいたい</div>
+                            <div class="phrase-romaji">hai tai</div>
+                            <div class="phrase-english">Hello (female)</div>
+                            <button class="play-audio" onclick="playPhrase('hai-tai')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">めんそーれ</div>
+                            <div class="phrase-romaji">mensore</div>
+                            <div class="phrase-english">Welcome</div>
+                            <button class="play-audio" onclick="playPhrase('mensore')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">にふぇーでーびる</div>
+                            <div class="phrase-romaji">nifee deebiru</div>
+                            <div class="phrase-english">Thank you</div>
+                            <button class="play-audio" onclick="playPhrase('nifee-deebiru')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">ちゅーうがなびら</div>
+                            <div class="phrase-romaji">chuu uganabira</div>
+                            <div class="phrase-english">Good afternoon / Hello</div>
+                            <button class="play-audio" onclick="playPhrase('chuu-uganabira')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">ゆたしくうにげーさびら</div>
+                            <div class="phrase-romaji">yutashiku unigee sabira</div>
+                            <div class="phrase-english">Nice to meet you</div>
+                            <button class="play-audio" onclick="playPhrase('yutashiku')">🔊</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Basic Conversation -->
+                <div class="phrase-section" data-category="basic">
+                    <h2 class="phrase-category-title">💬 Basic Conversation</h2>
+                    <div class="phrase-grid">
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">うん</div>
+                            <div class="phrase-romaji">un</div>
+                            <div class="phrase-english">Yes</div>
+                            <button class="play-audio" onclick="playPhrase('un')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">あらん</div>
+                            <div class="phrase-romaji">aran</div>
+                            <div class="phrase-english">No</div>
+                            <button class="play-audio" onclick="playPhrase('aran')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">わからん</div>
+                            <div class="phrase-romaji">wakaran</div>
+                            <div class="phrase-english">I don't understand</div>
+                            <button class="play-audio" onclick="playPhrase('wakaran')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">なーやが？</div>
+                            <div class="phrase-romaji">naa ya ga?</div>
+                            <div class="phrase-english">What is it?</div>
+                            <button class="play-audio" onclick="playPhrase('naa-ya-ga')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">まーんかいが？</div>
+                            <div class="phrase-romaji">maan kai ga?</div>
+                            <div class="phrase-english">Where is it?</div>
+                            <button class="play-audio" onclick="playPhrase('maan-kai-ga')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">いっぺーにふぇーでーびる</div>
+                            <div class="phrase-romaji">ippee nifee deebiru</div>
+                            <div class="phrase-english">Thank you very much</div>
+                            <button class="play-audio" onclick="playPhrase('ippee-nifee')">🔊</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food & Drink -->
+                <div class="phrase-section" data-category="food">
+                    <h2 class="phrase-category-title">🍽️ Food & Drink</h2>
+                    <div class="phrase-grid">
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">かめー</div>
+                            <div class="phrase-romaji">kamee</div>
+                            <div class="phrase-english">Let's eat</div>
+                            <button class="play-audio" onclick="playPhrase('kamee')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">ゴーヤー</div>
+                            <div class="phrase-romaji">goyaa</div>
+                            <div class="phrase-english">Bitter melon</div>
+                            <button class="play-audio" onclick="playPhrase('goyaa')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">あわもり</div>
+                            <div class="phrase-romaji">awamori</div>
+                            <div class="phrase-english">Okinawan distilled spirit</div>
+                            <button class="play-audio" onclick="playPhrase('awamori')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">ソーキそば</div>
+                            <div class="phrase-romaji">sooki soba</div>
+                            <div class="phrase-english">Okinawan pork rib noodles</div>
+                            <button class="play-audio" onclick="playPhrase('sooki-soba')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">まーさん</div>
+                            <div class="phrase-romaji">maasan</div>
+                            <div class="phrase-english">Delicious</div>
+                            <button class="play-audio" onclick="playPhrase('maasan')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">みじ</div>
+                            <div class="phrase-romaji">miji</div>
+                            <div class="phrase-english">Water</div>
+                            <button class="play-audio" onclick="playPhrase('miji')">🔊</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Travel & Directions -->
+                <div class="phrase-section" data-category="travel">
+                    <h2 class="phrase-category-title">🗺️ Travel & Directions</h2>
+                    <div class="phrase-grid">
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">うちなー</div>
+                            <div class="phrase-romaji">uchina</div>
+                            <div class="phrase-english">Okinawa</div>
+                            <button class="play-audio" onclick="playPhrase('uchina')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">なはし</div>
+                            <div class="phrase-romaji">naha shi</div>
+                            <div class="phrase-english">Naha City</div>
+                            <button class="play-audio" onclick="playPhrase('naha-shi')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">しゅりじょう</div>
+                            <div class="phrase-romaji">shuri jou</div>
+                            <div class="phrase-english">Shuri Castle</div>
+                            <button class="play-audio" onclick="playPhrase('shuri-jou')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">ゆくさー</div>
+                            <div class="phrase-romaji">yukusaa</div>
+                            <div class="phrase-english">Let's go</div>
+                            <button class="play-audio" onclick="playPhrase('yukusaa')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">ちかさん</div>
+                            <div class="phrase-romaji">chikasan</div>
+                            <div class="phrase-english">Close / Near</div>
+                            <button class="play-audio" onclick="playPhrase('chikasan')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">とーさん</div>
+                            <div class="phrase-romaji">toosan</div>
+                            <div class="phrase-english">Far</div>
+                            <button class="play-audio" onclick="playPhrase('toosan')">🔊</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cultural Expressions -->
+                <div class="phrase-section" data-category="culture">
+                    <h2 class="phrase-category-title">🎭 Cultural Expressions</h2>
+                    <div class="phrase-grid">
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">いちゃりばちょーでー</div>
+                            <div class="phrase-romaji">ichariba choodee</div>
+                            <div class="phrase-english">Once we meet, we are family</div>
+                            <button class="play-audio" onclick="playPhrase('ichariba-choodee')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">かりゆし</div>
+                            <div class="phrase-romaji">kariyushi</div>
+                            <div class="phrase-english">Good fortune / Happiness</div>
+                            <button class="play-audio" onclick="playPhrase('kariyushi')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">うちなーんちゅ</div>
+                            <div class="phrase-romaji">uchinanchu</div>
+                            <div class="phrase-english">Okinawan person</div>
+                            <button class="play-audio" onclick="playPhrase('uchinanchu')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">ちむぐりさ</div>
+                            <div class="phrase-romaji">chimugurisa</div>
+                            <div class="phrase-english">Heartfelt kindness</div>
+                            <button class="play-audio" onclick="playPhrase('chimugurisa')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">ゆいまーる</div>
+                            <div class="phrase-romaji">yuimaaru</div>
+                            <div class="phrase-english">Cooperation / Mutual help</div>
+                            <button class="play-audio" onclick="playPhrase('yuimaaru')">🔊</button>
+                        </div>
+
+                        <div class="phrase-card">
+                            <div class="phrase-uchinaguchi">てーげー</div>
+                            <div class="phrase-romaji">teegee</div>
+                            <div class="phrase-english">Take it easy / Laid back</div>
+                            <button class="play-audio" onclick="playPhrase('teegee')">🔊</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Download Section -->
+                <div class="download-section">
+                    <h2 class="section-title">Take the Phrasebook With You</h2>
+                    <p class="text-center">Download our complete phrasebook for offline study</p>
+                    <div class="text-center">
+                        <a href="https://github.com/tykewpm/uchinaguchi-project/blob/main/data/processed/basic_phrasebook.md" 
+                           class="btn btn-primary" target="_blank">
+                            📱 Download Phrasebook (PDF)
+                        </a>
+                        <a href="mailto:phrasebook@uchinaguchiproject.org" class="btn btn-outline">
+                            ➕ Suggest Phrases
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="practice-section">
+                    <h2 class="section-title">Practice Your Pronunciation</h2>
+                    <p class="text-center">
+                        Watch our video lessons to hear native pronunciation and practice speaking
+                    </p>
+                    <div class="text-center">
+                        <a href="videos.html" class="btn btn-primary">🎥 Watch Pronunciation Videos</a>
+                        <a href="dictionary.html" class="btn btn-outline">📖 Explore Full Dictionary</a>
+                    </div>
+                </div>

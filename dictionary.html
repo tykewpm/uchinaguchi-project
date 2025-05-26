@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uchinaguchi Dictionary - Uchinaguchi Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">🌺 Uchinaguchi Project</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="dictionary.html">Dictionary</a></li>
+                    <li><a href="phrasebook.html">Phrasebook</a></li>
+                    <li><a href="academic.html">Academic</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main style="margin-top: 70px;">
+        <!-- Page Header -->
+        <section class="section bg-light">
+            <div class="container">
+                <h1 class="section-title">Uchinaguchi Dictionary</h1>
+                <p class="section-description">
+                    Searchable dictionary with 76+ Uchinaguchi words and phrases collected from multiple sources
+                </p>
+                
+                <!-- Search Section -->
+                <div class="dictionary-search">
+                    <div class="search-container">
+                        <input type="text" id="dictionarySearch" placeholder="Search Uchinaguchi or English..." class="search-input">
+                        <button onclick="searchDictionary()" class="search-btn">🔍 Search</button>
+                    </div>
+                    
+                    <div class="search-options">
+                        <label class="search-option">
+                            <input type="radio" name="searchType" value="all" checked> All
+                        </label>
+                        <label class="search-option">
+                            <input type="radio" name="searchType" value="uchinaguchi"> Uchinaguchi → English
+                        </label>
+                        <label class="search-option">
+                            <input type="radio" name="searchType" value="english"> English → Uchinaguchi
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dictionary Results -->
+        <section class="section">
+            <div class="container">
+                <div id="searchResults" class="dictionary-results">
+                    <!-- Featured/Popular Words -->
+                    <h2 class="section-title">Featured Words</h2>
+                    
+                    <div class="word-grid">
+                        <div class="word-card">
+                            <div class="word-uchinaguchi">はいさい (hai sai)</div>
+                            <div class="word-pronunciation">[hai sai]</div>
+                            <div class="word-definition">Hello (used by males)</div>
+                            <div class="word-source">Source: onookinawa.com</div>
+                        </div>
+
+                        <div class="word-card">
+                            <div class="word-uchinaguchi">はいたい (haitai)</div>
+                            <div class="word-pronunciation">[hai tai]</div>
+                            <div class="word-definition">Hello (used by females)</div>
+                            <div class="word-source">Source: onookinawa.com</div>
+                        </div>
+
+                        <div class="word-card">
+                            <div class="word-uchinaguchi">めんそーれ (mensore)</div>
+                            <div class="word-pronunciation">[men so-re]</div>
+                            <div class="word-definition">Welcome</div>
+                            <div class="word-source">Source: Cultural guides</div>
+                        </div>
+
+                        <div class="word-card">
+                            <div class="word-uchinaguchi">ちゅーうがなびら</div>
+                            <div class="word-pronunciation">[chu u ga na bi ra]</div>
+                            <div class="word-definition">Good afternoon / Hello</div>
+                            <div class="word-source">Source: Language guides</div>
+                        </div>
+
+                        <div class="word-card">
+                            <div class="word-uchinaguchi">にふぇーでーびる</div>
+                            <div class="word-pronunciation">[ni fee dee bi ru]</div>
+                            <div class="word-definition">Thank you</div>
+                            <div class="word-source">Source: Cultural resources</div>
+                        </div>
+
+                        <div class="word-card">
+                            <div class="word-uchinaguchi">かりゆし (kariyushi)</div>
+                            <div class="word-pronunciation">[ka ri yu shi]</div>
+                            <div class="word-definition">Good fortune, happiness, auspiciousness</div>
+                            <div class="word-source">Source: Cultural dictionary</div>
+                        </div>
+
+                        <div class="word-card">
+                            <div class="word-uchinaguchi">いちゃりばちょーでー</div>
+                            <div class="word-pronunciation">[i cha ri ba cho dee]</div>
+                            <div class="word-definition">Once we meet and talk, we are brothers and sisters</div>
+                            <div class="word-source">Source: Cultural sayings</div>
+                        </div>
+
+                        <div class="word-card">
+                            <div class="word-uchinaguchi">ワン (wan)</div>
+                            <div class="word-pronunciation">[wan]</div>
+                            <div class="word-definition">I, me</div>
+                            <div class="word-source">Source: Grammar guides</div>
+                        </div>
+
+                        <div class="word-card">
+                            <div class="word-uchinaguchi">うちなー (uchina)</div>
+                            <div class="word-pronunciation">[u chi na]</div>
+                            <div class="word-definition">Okinawa</div>
+                            <div class="word-source">Source: Geographic terms</div>
+                        </div>
+
+                        <div class="word-card">
+                            <div class="word-uchinaguchi">うちなーんちゅ</div>
+                            <div class="word-pronunciation">[u chi na n chu]</div>
+                            <div class="word-definition">Okinawan person</div>
+                            <div class="word-source">Source: Identity terms</div>
+                        </div>
+
+                        <div class="word-card">
+                            <div class="word-uchinaguchi">さんしん (sanshin)</div>
+                            <div class="word-pronunciation">[san shin]</div>
+                            <div class="word-definition">Three-stringed traditional Okinawan instrument</div>
+                            <div class="word-source">Source: Music terminology</div>
+                        </div>
+
+                        <div class="word-card">
+                            <div class="word-uchinaguchi">ゴーヤー (goya)</div>
+                            <div class="word-pronunciation">[go ya]</div>
+                            <div class="word-definition">Bitter melon (traditional Okinawan vegetable)</div>
+                            <div class="word-source">Source: Food vocabulary</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Browse by Category -->
+                <div class="category-section">
+                    <h2 class="section-title">Browse by Category</h2>
+                    <div class="category-grid">
+                        <div class="category-card" onclick="filterByCategory('greetings')">
+                            <div class="category-icon">👋</div>
+                            <h3>Greetings</h3>
+                            <p>Hello, goodbye, welcome</p>
+                        </div>
+                        
+                        <div class="category-card" onclick="filterByCategory('family')">
+                            <div class="category-icon">👨‍👩‍👧‍👦</div>
+                            <h3>Family</h3>
+                            <p>Family relationships</p>
+                        </div>
+                        
+                        <div class="category-card" onclick="filterByCategory('food')">
+                            <div class="category-icon">🍽️</div>
+                            <h3>Food & Drink</h3>
+                            <p>Traditional Okinawan cuisine</p>
+                        </div>
+                        
+                        <div class="category-card" onclick="filterByCategory('culture')">
+                            <div class="category-icon">🎭</div>
+                            <h3>Culture</h3>
+                            <p>Traditions and customs</p>
+                        </div>
+                        
+                        <div class="category-card" onclick="filterByCategory('numbers')">
+                            <div class="category-icon">🔢</div>
+                            <h3>Numbers</h3>
+                            <p>Counting and quantities</p>
+                        </div>
+                        
+                        <div class="category-card" onclick="filterByCategory('nature')">
+                            <div class="category-icon">🌺</div>
+                            <h3>Nature</h3>
+                            <p>Plants, animals, weather</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Complete Dataset -->
+                <div class="dataset-section">
+                    <h2 class="section-title">Complete Dictionary Dataset</h2>
+                    <p class="text-center">
+                        Access our complete collection of 76+ dictionary entries from multiple sources
+                    </p>
+                    <div class="text-center">
+                        <a href="https://github.com/tykewpm/uchinaguchi-project/blob/main/data/processed/unified_dictionary.csv" 
+                           class="btn btn-primary" target="_blank">
+                            📊 Download Complete Dictionary (CSV)
+                        </a>
+                        <a href="https://github.com/tykewpm/uchinaguchi-project/tree/main/data" 
+                           class="btn btn-outline" target="_blank">
+                            📁 View All Data
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contribute Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="cta-section">
+                    <h2>Help Expand Our Dictionary</h2>
+                    <p>Know Uchinaguchi words or phrases that aren't in our dictionary? Help us build a comprehensive resource!</p>
+                    <div class="cta-buttons">
+                        <a href="mailto:dictionary@uchinaguchiproject.org" class="btn btn-primary">Submit Words</a>
+                        <a href="mailto:verify@uchinaguchiproject.org" class="btn btn-outline">Verify Entries</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌺 Uchinaguchi Project</h3>
+                    <p>Preserving and revitalizing the Okinawan language through digital collaboration.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="videos.html">Video Library</a></li>
+                        <li><a href="dictionary.html">Dictionary</a></li>
+                        <li><a href="phrasebook.html">Phrasebook</a></li>
+                        <li><a href="academic.html">Academic Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="https://github.com/tykewpm/uchinaguchi-project">GitHub</a></li>
+                        <li><a href="mailto:contact@uchinaguchiproject.org">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Uchinaguchi Project. Open source under MIT License.</p>
+                <p><em>Ichariba choodee</em> (Once we meet, we are family) 🌺</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/dictionary.js"></script>
+</body>
+</html>
