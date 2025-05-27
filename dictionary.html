@@ -56,14 +56,14 @@
         
         .dictionary-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 1.5rem;
             margin-top: 2rem;
         }
         
         .word-card {
             background: white;
-            border-radius: 8px;
+            border-radius: 12px;
             padding: 1.5rem;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
@@ -75,23 +75,103 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
         }
         
+        .word-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        
+        .word-title-section {
+            flex: 1;
+        }
+        
         .word-title {
             font-size: 1.5rem;
             font-weight: 600;
             color: #2563eb;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .word-romaji {
+            font-size: 1rem;
+            color: #718096;
+            font-style: italic;
+            margin-bottom: 0.25rem;
+        }
+        
+        .word-pronunciation {
+            font-size: 0.9rem;
+            color: #a0aec0;
+            font-family: monospace;
+        }
+        
+        .word-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .pronunciation-btn, .favorite-btn {
+            background: none;
+            border: none;
+            font-size: 1.25rem;
+            cursor: pointer;
+            padding: 0.25rem;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+        
+        .pronunciation-btn:hover {
+            background: #f7fafc;
+            transform: scale(1.1);
+        }
+        
+        .favorite-btn:hover {
+            background: #fef5e7;
+            transform: scale(1.1);
         }
         
         .word-definition {
             color: #4a5568;
             line-height: 1.6;
             margin-bottom: 1rem;
+            font-size: 1.1rem;
         }
         
-        .word-source {
+        .word-examples {
+            background: #f8fafc;
+            padding: 0.75rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            border-left: 3px solid #e2e8f0;
+        }
+        
+        .word-examples strong {
+            color: #2d3748;
             font-size: 0.9rem;
+        }
+        
+        .word-examples em {
+            color: #4a5568;
+            font-size: 0.95rem;
+        }
+        
+        .word-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
             color: #718096;
-            font-style: italic;
+            margin-top: 1rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .word-category {
+            background: #edf2f7;
+            padding: 0.25rem 0.5rem;
+            border-radius: 12px;
+            font-weight: 500;
         }
         
         .stats-section {
@@ -125,6 +205,7 @@
             text-align: center;
             padding: 3rem;
             color: #718096;
+            display: none;
         }
         
         .filter-buttons {
@@ -150,6 +231,34 @@
             background: #2563eb;
             color: white;
         }
+
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #2563eb;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            z-index: 1000;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes slideOut {
+            from { transform: translateX(0); opacity: 1; }
+            to { transform: translateX(100%); opacity: 0; }
+        }
+
+        mark {
+            background: #fef08a;
+            padding: 0.1rem 0.2rem;
+            border-radius: 2px;
+        }
     </style>
 </head>
 <body>
@@ -160,7 +269,7 @@
                 <ul class="nav-menu">
                     <li><a href="index.html#home">Home</a></li>
                     <li><a href="index.html#resources">Resources</a></li>
-                    <li><a href="index.html#videos">Videos</a></li>
+                    <li><a href="videos.html">Videos</a></li>
                     <li><a href="dictionary.html" class="active">Dictionary</a></li>
                     <li><a href="index.html#about">About</a></li>
                     <li><a href="index.html#contribute">Contribute</a></li>
@@ -196,9 +305,11 @@
                     
                     <div class="filter-buttons">
                         <button class="filter-btn active" data-filter="all">All Words</button>
-                        <button class="filter-btn" data-filter="common">Common</button>
                         <button class="filter-btn" data-filter="greetings">Greetings</button>
-                        <button class="filter-btn" data-filter="family">Family</button>
+                        <button class="filter-btn" data-filter="basic">Basic</button>
+                        <button class="filter-btn" data-filter="food">Food</button>
+                        <button class="filter-btn" data-filter="culture">Culture</button>
+                        <button class="filter-btn" data-filter="places">Places</button>
                     </div>
                 </div>
 
@@ -206,16 +317,16 @@
                     <h3>Dictionary Statistics</h3>
                     <div class="hero-stats">
                         <div class="stat">
-                            <span class="stat-number" id="totalWords">19</span>
+                            <span class="stat-number" id="totalWords">20</span>
                             <span class="stat-label">Total Entries</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number" id="visibleWords">19</span>
+                            <span class="stat-number" id="visibleWords">20</span>
                             <span class="stat-label">Currently Showing</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number">1</span>
-                            <span class="stat-label">Source</span>
+                            <span class="stat-number">Multiple</span>
+                            <span class="stat-label">Sources</span>
                         </div>
                     </div>
                 </div>
@@ -225,7 +336,7 @@
                         <!-- Words will be loaded here by JavaScript -->
                     </div>
                     
-                    <div id="noResults" class="no-results" style="display: none;">
+                    <div id="noResults" class="no-results">
                         <h3>No words found</h3>
                         <p>Try adjusting your search or filter criteria</p>
                     </div>
@@ -275,8 +386,392 @@
     </footer>
 
     <script>
-        // Dictionary data from your CSV
+        // Complete dictionary data - all in one file for simplicity
         const dictionaryData = [
-            { word: "haisai", definition: "Hello (male greeting)", source: "onookinawa.com", category: "greetings" },
-            { word: "haitai", definition: "Hello (female greeting)", source: "onookinawa.com", category: "greetings" },
-            { word: "n
+            { 
+                word: "haisai", 
+                romaji: "haisai", 
+                definition: "Hello (male greeting)", 
+                source: "onookinawa.com", 
+                category: "greetings", 
+                pronunciation: "/hai.sai/", 
+                examples: ["Haisai, genkii? (Hello, how are you?)"] 
+            },
+            { 
+                word: "haitai", 
+                romaji: "haitai", 
+                definition: "Hello (female greeting)", 
+                source: "onookinawa.com", 
+                category: "greetings", 
+                pronunciation: "/hai.tai/", 
+                examples: ["Haitai, choode? (Hello, how are you?)"] 
+            },
+            { 
+                word: "nifee deebiru", 
+                romaji: "nifee deebiru", 
+                definition: "Thank you", 
+                source: "onookinawa.com", 
+                category: "greetings", 
+                pronunciation: "/ni.feː deː.bi.ɾu/", 
+                examples: ["Nifee deebiru, tasukatta. (Thank you, that helped.)"] 
+            },
+            { 
+                word: "mensore", 
+                romaji: "mensore", 
+                definition: "Welcome", 
+                source: "onookinawa.com", 
+                category: "greetings", 
+                pronunciation: "/men.so.ɾe/", 
+                examples: ["Mensore, Okinawa! (Welcome to Okinawa!)"] 
+            },
+            { 
+                word: "uchina", 
+                romaji: "uchina", 
+                definition: "Okinawa", 
+                source: "onookinawa.com", 
+                category: "places", 
+                pronunciation: "/u.t͡ʃi.na/", 
+                examples: ["Uchina nu takara (Okinawa's treasure)"] 
+            },
+            { 
+                word: "uchinanchu", 
+                romaji: "uchinanchu", 
+                definition: "Okinawan person", 
+                source: "onookinawa.com", 
+                category: "people", 
+                pronunciation: "/u.t͡ʃi.nan.t͡ʃu/", 
+                examples: ["Wanu Uchinanchu yain (I am Okinawan)"] 
+            },
+            { 
+                word: "ichariba choodee", 
+                romaji: "ichariba choodee", 
+                definition: "Once we meet, we are family", 
+                source: "onookinawa.com", 
+                category: "culture", 
+                pronunciation: "/i.t͡ʃa.ɾi.ba t͡ʃoː.deː/", 
+                examples: ["This phrase embodies Okinawan hospitality"] 
+            },
+            { 
+                word: "kariyushi", 
+                romaji: "kariyushi", 
+                definition: "Good fortune, happiness", 
+                source: "onookinawa.com", 
+                category: "culture", 
+                pronunciation: "/ka.ɾi.ju.ʃi/", 
+                examples: ["Kariyushi nu kokoro (Heart of good fortune)"] 
+            },
+            { 
+                word: "goya", 
+                romaji: "goya", 
+                definition: "Bitter melon", 
+                source: "onookinawa.com", 
+                category: "food", 
+                pronunciation: "/go.ja/", 
+                examples: ["Goya chanpuru (Bitter melon stir-fry)"] 
+            },
+            { 
+                word: "awamori", 
+                romaji: "awamori", 
+                definition: "Okinawan distilled spirit", 
+                source: "onookinawa.com", 
+                category: "food", 
+                pronunciation: "/a.wa.mo.ɾi/", 
+                examples: ["Awamori wa Okinawa nu sake (Awamori is Okinawa's sake)"] 
+            },
+            { 
+                word: "maasan", 
+                romaji: "maasan", 
+                definition: "Delicious", 
+                source: "onookinawa.com", 
+                category: "food", 
+                pronunciation: "/maː.san/", 
+                examples: ["Kunu ryouri, maasan! (This food is delicious!)"] 
+            },
+            { 
+                word: "teegee", 
+                romaji: "teegee", 
+                definition: "Take it easy, laid back", 
+                source: "onookinawa.com", 
+                category: "culture", 
+                pronunciation: "/teː.geː/", 
+                examples: ["Teegee ni ikuyo (Let's take it easy)"] 
+            },
+            { 
+                word: "yuimaaru", 
+                romaji: "yuimaaru", 
+                definition: "Cooperation, mutual help", 
+                source: "onookinawa.com", 
+                category: "culture", 
+                pronunciation: "/ju.i.maː.ɾu/", 
+                examples: ["Yuimaaru nu kokoro (Spirit of cooperation)"] 
+            },
+            { 
+                word: "chimugurisa", 
+                romaji: "chimugurisa", 
+                definition: "Heartfelt kindness", 
+                source: "onookinawa.com", 
+                category: "culture", 
+                pronunciation: "/t͡ʃi.mu.gu.ɾi.sa/", 
+                examples: ["Chimugurisa ni michita hito (A person filled with kindness)"] 
+            },
+            { 
+                word: "un", 
+                romaji: "un", 
+                definition: "Yes", 
+                source: "onookinawa.com", 
+                category: "basic", 
+                pronunciation: "/un/", 
+                examples: ["Un, wakaribiru (Yes, I understand)"] 
+            },
+            { 
+                word: "aran", 
+                romaji: "aran", 
+                definition: "No", 
+                source: "onookinawa.com", 
+                category: "basic", 
+                pronunciation: "/a.ɾan/", 
+                examples: ["Aran, chigau yo (No, that's different)"] 
+            },
+            { 
+                word: "wakaran", 
+                romaji: "wakaran", 
+                definition: "I don't understand", 
+                source: "onookinawa.com", 
+                category: "basic", 
+                pronunciation: "/wa.ka.ɾan/", 
+                examples: ["Uchinaguchi, wakaran (I don't understand Uchinaguchi)"] 
+            },
+            { 
+                word: "chuu uganabira", 
+                romaji: "chuu uganabira", 
+                definition: "Good afternoon", 
+                source: "onookinawa.com", 
+                category: "greetings", 
+                pronunciation: "/t͡ʃuː u.ga.na.bi.ɾa/", 
+                examples: ["Chuu uganabira, ogenki desu ka? (Good afternoon, how are you?)"] 
+            },
+            { 
+                word: "yutashiku", 
+                romaji: "yutashiku unigee sabira", 
+                definition: "Nice to meet you", 
+                source: "onookinawa.com", 
+                category: "greetings", 
+                pronunciation: "/ju.ta.ʃi.ku u.ni.geː sa.bi.ɾa/", 
+                examples: ["Yutashiku unigee sabira (Nice to meet you)"] 
+            },
+            { 
+                word: "kamee", 
+                romaji: "kamee", 
+                definition: "Let's eat", 
+                source: "onookinawa.com", 
+                category: "food", 
+                pronunciation: "/ka.meː/", 
+                examples: ["Mina, kamee! (Everyone, let's eat!)"] 
+            }
+        ];
+
+        // Initialize dictionary when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeDictionary();
+        });
+
+        function initializeDictionary() {
+            const searchInput = document.getElementById('searchInput');
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            
+            // Display all words initially
+            displayWords(dictionaryData);
+            updateStats(dictionaryData.length, dictionaryData.length);
+
+            // Search functionality
+            let searchTimeout;
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    clearTimeout(searchTimeout);
+                    searchTimeout = setTimeout(() => {
+                        const searchTerm = this.value.toLowerCase().trim();
+                        searchWords(searchTerm);
+                    }, 300);
+                });
+            }
+
+            // Filter functionality
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    const filterValue = this.getAttribute('data-filter');
+                    filterWords(filterValue);
+                });
+            });
+        }
+
+        function displayWords(words) {
+            const wordGrid = document.getElementById('wordGrid');
+            const noResults = document.getElementById('noResults');
+            
+            if (!wordGrid) return;
+
+            if (words.length === 0) {
+                wordGrid.innerHTML = '';
+                if (noResults) noResults.style.display = 'block';
+                return;
+            }
+
+            if (noResults) noResults.style.display = 'none';
+            wordGrid.innerHTML = words.map(word => createWordCard(word)).join('');
+        }
+
+        function createWordCard(word) {
+            const examples = word.examples ? word.examples.join('<br>') : '';
+            const categoryIcon = getCategoryIcon(word.category);
+            
+            return `
+                <div class="word-card" data-category="${word.category}" tabindex="0">
+                    <div class="word-header">
+                        <div class="word-title-section">
+                            <div class="word-title">${word.word}</div>
+                            <div class="word-romaji">${word.romaji}</div>
+                            ${word.pronunciation ? `<div class="word-pronunciation">${word.pronunciation}</div>` : ''}
+                        </div>
+                        <div class="word-actions">
+                            <button class="pronunciation-btn" onclick="playPronunciation('${word.word}')" title="Play pronunciation">
+                                🔊
+                            </button>
+                            <button class="favorite-btn" onclick="toggleFavorite('${word.word}')" title="Add to favorites">
+                                ⭐
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="word-definition">${word.definition}</div>
+                    
+                    ${examples ? `
+                        <div class="word-examples">
+                            <strong>Examples:</strong><br>
+                            <em>${examples}</em>
+                        </div>
+                    ` : ''}
+                    
+                    <div class="word-footer">
+                        <span class="word-category">
+                            ${categoryIcon} ${word.category}
+                        </span>
+                        <span class="word-source">Source: ${word.source}</span>
+                    </div>
+                </div>
+            `;
+        }
+
+        function getCategoryIcon(category) {
+            const icons = {
+                'greetings': '👋',
+                'basic': '💬',
+                'food': '🍽️',
+                'places': '🗺️',
+                'people': '👥',
+                'culture': '🎭'
+            };
+            return icons[category] || '📝';
+        }
+
+        function searchWords(searchTerm) {
+            if (!searchTerm) {
+                displayWords(dictionaryData);
+                updateStats(dictionaryData.length, dictionaryData.length);
+                return;
+            }
+
+            const filteredWords = dictionaryData.filter(word => {
+                const searchFields = [
+                    word.word.toLowerCase(),
+                    word.definition.toLowerCase(),
+                    word.romaji.toLowerCase(),
+                    word.category.toLowerCase(),
+                    ...(word.examples || []).map(ex => ex.toLowerCase())
+                ];
+                
+                return searchFields.some(field => field.includes(searchTerm));
+            });
+
+            displayWords(filteredWords);
+            updateStats(dictionaryData.length, filteredWords.length);
+        }
+
+        function filterWords(filterValue) {
+            const filteredWords = filterValue === 'all' 
+                ? dictionaryData 
+                : dictionaryData.filter(word => word.category === filterValue);
+
+            displayWords(filteredWords);
+            updateStats(dictionaryData.length, filteredWords.length);
+        }
+
+        function updateStats(total, visible) {
+            const totalWordsElement = document.getElementById('totalWords');
+            const visibleWordsElement = document.getElementById('visibleWords');
+            
+            if (totalWordsElement) totalWordsElement.textContent = total;
+            if (visibleWordsElement) visibleWordsElement.textContent = visible;
+        }
+
+        function playPronunciation(word) {
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(word);
+                utterance.lang = 'ja-JP';
+                utterance.rate = 0.8;
+                utterance.pitch = 1;
+                
+                speechSynthesis.speak(utterance);
+                
+                // Visual feedback
+                const button = event.target;
+                button.style.transform = 'scale(1.2)';
+                button.textContent = '🔉';
+                
+                setTimeout(() => {
+                    button.style.transform = 'scale(1)';
+                    button.textContent = '🔊';
+                }, 1000);
+            } else {
+                showToast(`Pronunciation: ${word}`);
+            }
+        }
+
+        function toggleFavorite(word) {
+            const favorites = JSON.parse(localStorage.getItem('uchinaguchi_favorites') || '[]');
+            const button = event.target;
+            
+            if (favorites.includes(word)) {
+                const index = favorites.indexOf(word);
+                favorites.splice(index, 1);
+                button.style.color = '#718096';
+                showToast(`"${word}" removed from favorites`);
+            } else {
+                favorites.push(word);
+                button.style.color = '#fbbf24';
+                showToast(`"${word}" added to favorites`);
+            }
+            
+            localStorage.setItem('uchinaguchi_favorites', JSON.stringify(favorites));
+        }
+
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.textContent = message;
+            
+            document.body.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.style.animation = 'slideOut 0.3s ease-in';
+                setTimeout(() => {
+                    if (document.body.contains(toast)) {
+                        document.body.removeChild(toast);
+                    }
+                }, 300);
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
