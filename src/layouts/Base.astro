@@ -25,6 +25,7 @@ const isActive = (href) => (href === '/' ? path === '/' : path.startsWith(href))
         <nav class="nav">
           <a href="/" aria-current={isActive('/') ? 'page' : undefined}>Home</a>
           <a href="/dictionary" aria-current={isActive('/dictionary') ? 'page' : undefined}>Dictionary</a>
+          <a href="/videos" aria-current={isActive('/videos') ? 'page' : undefined}>Videos</a>
         </nav>
       </div>
     </header>

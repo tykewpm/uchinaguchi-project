@@ -1,0 +1,290 @@
+{
+  "_meta": {
+    "description": "Curated subset of the collected YouTube data. Auto-filtered for genuine Uchinaaguchi language relevance; each item still needs human review (curated=false).",
+    "selected_from": 291,
+    "count": 28,
+    "note": "Videos are embedded via YouTube iframe — no API key required. Levels are placeholders pending review."
+  },
+  "videos": [
+    {
+      "youtubeId": "7-L8Jq49LtU",
+      "title": "My Okinawa Language /Uchinaguchi Lesson ① in English 🌟英語で学ぶ沖縄方言、うちなーぐち①",
+      "channel": "MyOkinawaStory ⭐️我的沖縄物語",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "5:35",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "w0yTJyNOfCw",
+      "title": "Uchinaguchi/Okinawan language Lesson 7 英語で学ぶ沖縄方言７ TOP3 Okinawan Words for LOVE.",
+      "channel": "MyOkinawaStory ⭐️我的沖縄物語",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "5:11",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "9ljUdn0KpH0",
+      "title": "My Okinawa language/Uchinaguchi Lesson ② in Malay. 「マレー語で学ぶ沖縄方言、うちなーぐち②」Okinawa Story, 沖縄ストーリー",
+      "channel": "MyOkinawaStory ⭐️我的沖縄物語",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "4:22",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "MOpp_woMuds",
+      "title": "My Okinawa language/Uchinaguchi Lesson ３ in English. 「英語で学ぶ沖縄方言、うちなーぐち３」Okinawa Story, 沖縄ストーリー",
+      "channel": "MyOkinawaStory ⭐️我的沖縄物語",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "3:25",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "M6l317gp_YI",
+      "title": "My Okinawa language Lesson 6 in English「英語で学ぶうちなーぐち6」Okinawan food which you can find in Singapore",
+      "channel": "MyOkinawaStory ⭐️我的沖縄物語",
+      "topic": "music",
+      "level": "beginner",
+      "duration": "6:17",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "Q8EFTK1WJxQ",
+      "title": "My Okinawa language/Uchinaguchi Lesson ② in English. 「英語で学ぶ沖縄方言、うちなーぐち②」Okinawa Story, 沖縄ストーリー",
+      "channel": "MyOkinawaStory ⭐️我的沖縄物語",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "3:47",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "VEyQsn-v96k",
+      "title": "TOP 3 WORDS , You can impress Okinawans   My Okinawa language Lesson 5 in English. 「英語で学ぶうちなーぐち5」",
+      "channel": "MyOkinawaStory ⭐️我的沖縄物語",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "3:48",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "FtoFtzRHP88",
+      "title": "TOP 5 Useful OKINAWA words   My Okinawa language Lesson ４ in English. 「英語で学ぶ沖縄方言、うちなーぐち４」",
+      "channel": "MyOkinawaStory ⭐️我的沖縄物語",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "4:53",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "bcdaVJ9exEE",
+      "title": "学冲绳语第2课 My Okinawa language/Uchinaguchi Lesson ② Chinese. 「中国語で学ぶ沖縄方言、うちなーぐち②」Okinawa Story, 沖縄ストーリー",
+      "channel": "MyOkinawaStory ⭐️我的沖縄物語",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "4:13",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "kigGuWNigjo",
+      "title": "My Okinawa language/Uchinaguchi lesson in Chinese ① 中国語で学ぶ沖縄方言/うちなーぐち①」 multi-language Challenge",
+      "channel": "MyOkinawaStory ⭐️我的沖縄物語",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "4:16",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "WHut8ZvfHgE",
+      "title": "My Okinawa language/Uchinaguchi Lesson ② in VIETNAMESE. 「ベトナム語で学ぶ沖縄方言、うちなーぐち②」Okinawa Story, 沖縄ストーリー",
+      "channel": "MyOkinawaStory ⭐️我的沖縄物語",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "4:11",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "Wd3UwX-hVdU",
+      "title": "How to say goodbye in the Okinawan language | うちなーぐち沖縄語琉球語",
+      "channel": "Rob Kajiwara",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "7:29",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "vXBRnbT7-Ac",
+      "title": "Uchinaguchi Study Group (#1) - Special Topics - Channel Introduction  (Okinawa Language 沖縄語)",
+      "channel": "Uchinaguchi Study Group  (Okinawan language)",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "8:01",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "V5Q1q6NFk4g",
+      "title": "Uchinaguchi Study Group (#4) - Special Topics - Uchinaaguchi Alphabets　　（Okinawan Language 沖縄語）",
+      "channel": "Uchinaguchi Study Group  (Okinawan language)",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "17:07",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "1I04QPF3hVk",
+      "title": "Uchinaguchi Study Group (#5) - Special Topics - Uchinaaguchi Resources  (Okinawan Language 沖縄語)",
+      "channel": "Uchinaguchi Study Group  (Okinawan language)",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "16:08",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "Tf6DFPM68Ok",
+      "title": "My Okinawa Language lesson in Multi-Languages. PR Video.Okinawa story　多言語で学ぶ「沖縄方言、ウチナーグチ」プロモーションビデオ",
+      "channel": "MyOkinawaStory ⭐️我的沖縄物語",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "1:33",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "WGEKvmRiJrY",
+      "title": "Creating new words in the Okinawan language | うちなーぐち新字作成さ|沖縄語・琉球語",
+      "channel": "Rob Kajiwara",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "3:37",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "r5dzd3RYUbE",
+      "title": "Uchinaguchi Study Group (#33) - Special Topics - Okinawan Surnames   (Okinawan Language 沖縄語)",
+      "channel": "Uchinaguchi Study Group  (Okinawan language)",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "14:36",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "ekk9jzi6Clk",
+      "title": "Uchinaguchi Study Group (#7) - Situational - Common Phrases (#1)    (Okinawan Language 沖縄語)",
+      "channel": "Uchinaguchi Study Group  (Okinawan language)",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "7:48",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "4uwMiiw84jU",
+      "title": "Uchinaguchi Study Group (#2) - Special Topics - Ryukyu, Uchinaa, Okinawa  (Okinawan Language 沖縄語）",
+      "channel": "Uchinaguchi Study Group  (Okinawan language)",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "13:01",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "T1p0Mc_8BaQ",
+      "title": "Uchinaguchi Study Group (#8) - Grammar - Sentence Pattern - This is やん  (Okinawan Language 沖縄語)",
+      "channel": "Uchinaguchi Study Group  (Okinawan language)",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "12:00",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "3n4q4dcExXk",
+      "title": "Uchinaguchi Study Group (#17) - Situational - Self Introduction (#1)    (Okinawan Language 沖縄語)",
+      "channel": "Uchinaguchi Study Group  (Okinawan language)",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "9:11",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "Heq1wOC7iE0",
+      "title": "Uchinaguchi Study Group (#9) - Grammar - Particles - Topic Marker Ya や  (Okinawan Language 沖縄語)",
+      "channel": "Uchinaguchi Study Group  (Okinawan language)",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "12:56",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "Hf2tFHLMYZU",
+      "title": "Uchinaguchi Study Group (#13) - Vocabulary - Verbs (#1)  (Okinawan Language 沖縄語)",
+      "channel": "Uchinaguchi Study Group  (Okinawan language)",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "6:46",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "ungHm_gsWvA",
+      "title": "Uchinaguchi Study Group (#16) - Vocabulary - Nouns - Family  (Okinawan Language 沖縄語)",
+      "channel": "Uchinaguchi Study Group  (Okinawan language)",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "8:57",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "gVdfhjB1JDg",
+      "title": "Uchinaguchi Study Group (#51) - Verb Conjugation - Past Casual   (Okinawan Language 沖縄語)",
+      "channel": "Uchinaguchi Study Group  (Okinawan language)",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "9:38",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "N62MRcFQS4o",
+      "title": "Uchinaguchi Study Group (#10) - Vocabulary - Nouns - Vegetables and Fruits  (Okinawan Language 沖縄語)",
+      "channel": "Uchinaguchi Study Group  (Okinawan language)",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "7:25",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    },
+    {
+      "youtubeId": "g1vrPft5iOQ",
+      "title": "Uchinaguchi Study Group (#21) - Special Topics - Counting (#1)    (Okinawan Language 沖縄語)",
+      "channel": "Uchinaguchi Study Group  (Okinawan language)",
+      "topic": "lessons",
+      "level": "beginner",
+      "duration": "12:22",
+      "curated": false,
+      "note": "auto-selected from collected data; needs human review before featuring"
+    }
+  ]
+}
