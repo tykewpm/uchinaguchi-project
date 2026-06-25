@@ -1,0 +1,77 @@
+---
+import Base from '../layouts/Base.astro';
+import data from '../../data/phrasebook.json';
+const sections = data.sections;
+const total = sections.reduce((n, s) => n + s.phrases.length, 0);
+---
+<Base title="Phrasebook — The Uchinaguchi Project" description="Everyday Uchinaaguchi (Okinawan) phrases you can actually use.">
+  <section>
+    <div class="container">
+      <h1>Phrasebook</h1>
+      <p style="color:var(--muted);max-width:680px">
+        Everyday Uchinaaguchi phrases — greetings, courtesy, and a few sayings — that you
+        can actually use with family and friends. Search, or browse by situation.
+      </p>
+
+      <div class="notice">
+        <strong>A small, honest start.</strong> Every phrase here is awaiting review by a
+        fluent speaker, and real Okinawan audio is coming — we never use synthetic Japanese
+        pronunciation. This list grows as speakers and the community contribute.
+      </div>
+
+      <div class="dict-tools">
+        <input id="psearch" class="search" type="search" placeholder="Search phrases or meanings…" aria-label="Search phrasebook" />
+      </div>
+      <p id="pcount" style="color:var(--muted);font-size:.9rem"></p>
+
+      <div id="plist">
+        {sections.map((s) => (
+          <div class="phrase-section" data-section>
+            <h2>{s.name}</h2>
+            <div class="phrase-list">
+              {s.phrases.map((p) => (
+                <div class="phrase" data-search={`${p.okinawan} ${p.romaji} ${p.english} ${p.note}`.toLowerCase()}>
+                  <div class="oki">
+                    {p.okinawan}
+                    <span class="audio-soon" title="Real Okinawan audio is coming — no synthetic Japanese TTS.">🔊 audio coming</span>
+                  </div>
+                  <div class="en">{p.english}</div>
+                  {p.note && <div class="pnote">{p.note}</div>}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+      <div class="no-results" id="pnoResults">No matches. Try a different search.</div>
+      <p style="color:var(--muted);font-size:.85rem;margin-top:1.5rem">{total} phrases · all awaiting fluent-speaker validation</p>
+    </div>
+  </section>
+
+  <script>
+    const search = document.getElementById('psearch');
+    const phrases = Array.from(document.querySelectorAll('#plist .phrase'));
+    const sections = Array.from(document.querySelectorAll('#plist [data-section]'));
+    const count = document.getElementById('pcount');
+    const noResults = document.getElementById('pnoResults');
+
+    function apply() {
+      const q = (search.value || '').toLowerCase().trim();
+      let visible = 0;
+      phrases.forEach((p) => {
+        const show = !q || p.dataset.search.includes(q);
+        p.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      // hide empty sections
+      sections.forEach((sec) => {
+        const any = Array.from(sec.querySelectorAll('.phrase')).some((p) => p.style.display !== 'none');
+        sec.style.display = any ? '' : 'none';
+      });
+      count.textContent = q ? `${visible} match${visible === 1 ? '' : 'es'}` : '';
+      noResults.style.display = visible === 0 ? 'block' : 'none';
+    }
+    search.addEventListener('input', apply);
+    apply();
+  </script>
+</Base>

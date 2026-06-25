@@ -1,0 +1,49 @@
+{
+  "_meta": {
+    "description": "Starter phrasebook for the Uchinaguchi Project. Phrases are drawn from the same vetted-pending set as the dictionary; everything here is awaiting fluent-speaker validation.",
+    "proposed_license": "CC-BY-SA-4.0",
+    "status_note": "All phrases are 'needs_validation'. Do not present as authoritative until reviewed by a fluent speaker. Romanization to be standardized to the JLect convention.",
+    "created": "2026-06-25"
+  },
+  "sections": [
+    {
+      "name": "Greetings",
+      "phrases": [
+        { "okinawan": "Haisai", "romaji": "haisai", "english": "Hello (said by men)", "note": "Casual, everyday greeting." },
+        { "okinawan": "Haitai", "romaji": "haitai", "english": "Hello (said by women)", "note": "Casual, everyday greeting." },
+        { "okinawan": "Chuu uganabira", "romaji": "chuu uganabira", "english": "Good day (polite greeting)", "note": "More formal than haisai/haitai." },
+        { "okinawan": "Mensoore", "romaji": "mensoore", "english": "Welcome", "note": "Often seen welcoming visitors to Okinawa." },
+        { "okinawan": "Yutasarugutu unigeesabira", "romaji": "yutasarugutu unigeesabira", "english": "Nice to meet you / please treat me kindly", "note": "Polite self-introduction." }
+      ]
+    },
+    {
+      "name": "Courtesy & feeling",
+      "phrases": [
+        { "okinawan": "Nifee deebiru", "romaji": "nifee deebiru", "english": "Thank you", "note": "Common expression of gratitude." },
+        { "okinawan": "Ichariba choodee", "romaji": "ichariba choodee", "english": "Once we meet, we are family", "note": "A cherished saying of Okinawan hospitality." },
+        { "okinawan": "Ganjuu yami?", "romaji": "ganjuu yami?", "english": "Are you well? / How are you?", "note": "Ganjuu means healthy, strong." }
+      ]
+    },
+    {
+      "name": "Basics: yes, no, understanding",
+      "phrases": [
+        { "okinawan": "Uu", "romaji": "uu", "english": "Yes", "note": "" },
+        { "okinawan": "Aran", "romaji": "aran", "english": "No / it is not", "note": "" },
+        { "okinawan": "Wakaran", "romaji": "wakaran", "english": "I don't understand", "note": "Useful while learning." }
+      ]
+    },
+    {
+      "name": "Eating",
+      "phrases": [
+        { "okinawan": "Kamee!", "romaji": "kamee", "english": "Eat up! / Let's eat", "note": "Warm invitation to a meal." },
+        { "okinawan": "Maasan", "romaji": "maasan", "english": "Delicious", "note": "" }
+      ]
+    },
+    {
+      "name": "Sayings",
+      "phrases": [
+        { "okinawan": "Nankuru naisa", "romaji": "nankuru naisa", "english": "It will all work out somehow", "note": "An iconic Okinawan expression of optimism and resilience." }
+      ]
+    }
+  ]
+}
