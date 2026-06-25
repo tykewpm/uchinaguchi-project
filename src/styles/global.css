@@ -1,0 +1,107 @@
+/* The Uchinaguchi Project — brand system (see Founding Docs / 4-Brand-Identity.md) */
+
+:root {
+  /* Primary palette */
+  --deigo-red: #E63946;     /* hibiscus / deigo — signature accent + CTAs */
+  --ryukyu-indigo: #1D3461; /* bingata indigo — grounding, trust */
+  --shell-sand: #FBF6EC;    /* warm off-white ground (never stark white) */
+
+  /* Secondary / bingata accents */
+  --bingata-gold: #F4A93D;
+  --ocean-teal: #2A9D8F;
+  --coral-pink: #F4978E;
+  --karaki-brown: #6B4226;
+
+  --ink: #2A2420;           /* body text on light */
+  --muted: #6B6258;
+
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-jp: "Noto Sans JP", var(--font-body);
+
+  --maxw: 1080px;
+  --radius: 14px;
+  --shadow: 0 6px 24px rgba(29, 52, 97, 0.08);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--shell-sand);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 { font-family: var(--font-display); color: var(--ryukyu-indigo); line-height: 1.15; font-weight: 600; }
+
+a { color: var(--deigo-red); }
+
+.container { max-width: var(--maxw); margin: 0 auto; padding: 0 1.25rem; }
+
+/* Header */
+.site-header {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(251, 246, 236, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(29, 52, 97, 0.08);
+}
+.site-header .container { display: flex; align-items: center; justify-content: space-between; min-height: 64px; }
+.brand { display: flex; align-items: center; gap: .5rem; font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; color: var(--ryukyu-indigo); text-decoration: none; }
+.brand .mark { color: var(--deigo-red); }
+.nav { display: flex; gap: 1.25rem; }
+.nav a { color: var(--ryukyu-indigo); text-decoration: none; font-weight: 500; font-size: .98rem; }
+.nav a:hover, .nav a[aria-current="page"] { color: var(--deigo-red); }
+
+/* Hero */
+.hero { padding: 4.5rem 0 3rem; text-align: center; }
+.hero h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); margin: 0 0 .5rem; }
+.hero .subline { font-style: italic; color: var(--karaki-brown); font-size: 1.1rem; margin: 0 0 1.5rem; }
+.hero p.lede { max-width: 620px; margin: 0 auto 2rem; font-size: 1.1rem; color: var(--muted); }
+
+/* Buttons */
+.btn { display: inline-block; padding: .8rem 1.4rem; border-radius: 999px; font-weight: 600; text-decoration: none; transition: transform .15s ease, box-shadow .15s ease; }
+.btn-primary { background: var(--deigo-red); color: #fff; box-shadow: var(--shadow); }
+.btn-primary:hover { transform: translateY(-2px); }
+.btn-ghost { color: var(--ryukyu-indigo); border: 1.5px solid rgba(29,52,97,.2); }
+
+/* Sections */
+section { padding: 2.5rem 0; }
+.section-tint { background: linear-gradient(180deg, rgba(42,157,143,.06), rgba(244,169,61,.05)); }
+
+/* Dictionary */
+.dict-tools { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; margin: 1.5rem 0; }
+.search { flex: 1 1 260px; padding: .75rem 1rem; border: 1.5px solid rgba(29,52,97,.18); border-radius: 999px; font-size: 1rem; background: #fff; }
+.filters { display: flex; flex-wrap: wrap; gap: .4rem; }
+.chip { border: 1.5px solid rgba(29,52,97,.18); background: #fff; color: var(--ryukyu-indigo); padding: .35rem .8rem; border-radius: 999px; font-size: .85rem; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--ryukyu-indigo); color: #fff; border-color: var(--ryukyu-indigo); }
+
+.word-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; margin-top: 1rem; }
+.word-card { background: #fff; border: 1px solid rgba(29,52,97,.08); border-radius: var(--radius); padding: 1.1rem 1.2rem; box-shadow: var(--shadow); }
+.word-head { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; }
+.headword { font-family: var(--font-display); font-size: 1.35rem; color: var(--ryukyu-indigo); margin: 0; }
+.romaji { color: var(--muted); font-size: .9rem; }
+.ipa { color: var(--ocean-teal); font-size: .82rem; font-family: var(--font-body); }
+.gloss { margin: .5rem 0 .35rem; }
+.example { font-size: .9rem; color: var(--karaki-brown); border-left: 3px solid var(--bingata-gold); padding-left: .65rem; margin: .5rem 0; }
+.word-foot { display: flex; justify-content: space-between; align-items: center; margin-top: .6rem; font-size: .75rem; color: var(--muted); }
+.cat-tag { background: rgba(42,157,143,.12); color: var(--ocean-teal); padding: .15rem .55rem; border-radius: 999px; }
+.audio-soon { font-size: .72rem; color: var(--muted); border: 1px dashed rgba(29,52,97,.25); border-radius: 999px; padding: .12rem .5rem; }
+.badge-validate { display:inline-block; font-size:.68rem; color: var(--karaki-brown); background: rgba(244,169,61,.18); border-radius: 999px; padding: .1rem .5rem; }
+
+.notice { background: rgba(244,169,61,.12); border: 1px solid rgba(244,169,61,.4); border-radius: var(--radius); padding: 1rem 1.2rem; font-size: .92rem; color: var(--karaki-brown); margin: 1.5rem 0; }
+.no-results { text-align: center; color: var(--muted); padding: 2rem; display: none; }
+
+/* Footer */
+.site-footer { background: var(--ryukyu-indigo); color: #e8ecf4; margin-top: 3rem; padding: 2.5rem 0; }
+.site-footer a { color: var(--coral-pink); }
+.site-footer .ichariba { font-family: var(--font-display); font-style: italic; color: #fff; margin-top: 1rem; }
+
+@media (max-width: 560px) {
+  .nav { gap: .9rem; font-size: .9rem; }
+  .hero { padding: 3rem 0 2rem; }
+}

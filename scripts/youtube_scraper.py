@@ -120,7 +120,7 @@ def save_results(videos, details, output_folder="uchinaguchi_data"):
 def main():
     # You'll need to get a YouTube Data API key from Google Cloud Console
     # https://console.cloud.google.com/apis/credentials
-    API_KEY = "AIzaSyDLPesY2DFZuKx73XVyomCvo7nVzQg4mzY"  # Replace with your actual API key
+    API_KEY = os.environ.get("YOUTUBE_API_KEY", "")  # Replace with your actual API key
     
     # Set up the YouTube API client
     youtube = setup_youtube_api(API_KEY)

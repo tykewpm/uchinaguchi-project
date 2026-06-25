@@ -1,0 +1,14 @@
+{
+  "name": "uchinaguchi-project",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Preserving and revitalizing Uchinaaguchi (the Okinawan language).",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.6.1"
+  }
+}

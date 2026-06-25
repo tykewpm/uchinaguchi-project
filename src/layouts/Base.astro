@@ -1,0 +1,41 @@
+---
+import '../styles/global.css';
+const { title = 'The Uchinaguchi Project', description = 'Preserving and revitalizing Uchinaaguchi — the Okinawan language — for future generations.' } = Astro.props;
+const path = Astro.url.pathname;
+const isActive = (href) => (href === '/' ? path === '/' : path.startsWith(href));
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="/"><span class="mark">🌺</span> Uchinaguchi Project</a>
+        <nav class="nav">
+          <a href="/" aria-current={isActive('/') ? 'page' : undefined}>Home</a>
+          <a href="/dictionary" aria-current={isActive('/dictionary') ? 'page' : undefined}>Dictionary</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <strong>The Uchinaguchi Project</strong> — preserving Uchinaaguchi, the language of Okinawa, with and for the community.
+        <div class="ichariba">Ichariba choodee — once we meet, we are family. 🌺</div>
+      </div>
+    </footer>
+  </body>
+</html>
