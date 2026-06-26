@@ -73,7 +73,7 @@ const total = entries.length;
   const search = document.getElementById('search');
   const grid = document.getElementById('grid');
   const cards = Array.from(grid.querySelectorAll('.word-card'));
-  const original = cards.slice();
+  const idx = new Map(cards.map((c, i) => [c, i]));
   const chips = Array.from(document.querySelectorAll('.chip'));
   const count = document.getElementById('count');
   const noResults = document.getElementById('noResults');
@@ -96,24 +96,29 @@ const total = entries.length;
     return -1;
   }
 
+  // Reorder via the CSS `order` property instead of moving DOM nodes — one repaint, not 327 reflows.
   function apply() {
     const q = (search.value || '').toLowerCase().trim();
-    const matched = [];
-    cards.forEach((card) => {
-      const okCat = activeCat === 'all' || card.dataset.cat === activeCat;
-      if (!okCat) { card.style.display = 'none'; return; }
-      if (!q) { card.style.display = ''; return; }
-      const s = score(card, q);
-      if (s < 0) card.style.display = 'none';
-      else { card.style.display = ''; matched.push([s, card]); }
-    });
+    let visible = 0;
     if (q) {
-      matched.sort((a, b) => b[0] - a[0] || original.indexOf(a[1]) - original.indexOf(b[1]));
-      matched.forEach(([, card]) => grid.appendChild(card));
+      const matched = [];
+      cards.forEach((card) => {
+        const okCat = activeCat === 'all' || card.dataset.cat === activeCat;
+        if (!okCat) { card.style.display = 'none'; return; }
+        const s = score(card, q);
+        if (s < 0) { card.style.display = 'none'; }
+        else matched.push([s, card]);
+      });
+      matched.sort((a, b) => b[0] - a[0] || idx.get(a[1]) - idx.get(b[1]));
+      matched.forEach(([, card], i) => { card.style.display = ''; card.style.order = i; visible++; });
     } else {
-      original.forEach((card) => grid.appendChild(card));
+      cards.forEach((card) => {
+        const okCat = activeCat === 'all' || card.dataset.cat === activeCat;
+        card.style.display = okCat ? '' : 'none';
+        card.style.order = '';
+        if (okCat) visible++;
+      });
     }
-    const visible = cards.filter((c) => c.style.display !== 'none').length;
     count.textContent = q ? `${visible} ${matchesLabel} “${search.value.trim()}”` : `${visible} ${wordsLabel}`;
     noResults.style.display = visible === 0 ? 'block' : 'none';
   }
