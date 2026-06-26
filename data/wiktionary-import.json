@@ -1,0 +1,4174 @@
+{
+  "_meta": {
+    "description": "Okinawan (Uchinaaguchi) vocabulary harvested from machine-readable Wiktionary data on Kaikki.org. Entries span interjections, phrases, adjectives, adverbs, verbs, pronouns, particles, counters, numerals, and common everyday nouns (food, family, body, nature, animals, time, people, places). Headwords are given in kana/kanji as shown on Kaikki; romaji is a best-effort Hepburn-style transliteration of the kana reading with long vowels doubled.",
+    "source": "Wiktionary (English) via Kaikki.org, CC BY-SA 4.0",
+    "extracted": "from enwiktionary 2026-06-01 dump",
+    "license": "CC-BY-SA-4.0",
+    "status_note": "All entries needs_validation; romanization is best-effort pending fluent-speaker review.",
+    "count": 318
+  },
+  "entries": [
+    {
+      "headword": "kyuu uganabira",
+      "kana": "今日拝なびら",
+      "romaji": "kyuu uganabira",
+      "english": [
+        "hello, good day (a greeting used when meeting someone)"
+      ],
+      "part_of_speech": "interjection",
+      "category": "greetings",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "karii",
+      "kana": "嘉例",
+      "romaji": "karii",
+      "english": [
+        "Cheers! (a common toast when drinking in company)"
+      ],
+      "part_of_speech": "interjection",
+      "category": "greetings",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "uwee deebiru",
+      "kana": "御拝でーびる",
+      "romaji": "uwee deebiru",
+      "english": [
+        "thank you"
+      ],
+      "part_of_speech": "interjection",
+      "category": "greetings",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "wassaibiin",
+      "kana": "悪さいびーん",
+      "romaji": "wassaibiin",
+      "english": [
+        "sorry; I'm very sorry; please forgive me (an expression of apology or regret)"
+      ],
+      "part_of_speech": "interjection",
+      "category": "greetings",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ukimisheebiti",
+      "kana": "起きみしぇーびてぃ",
+      "romaji": "ukimisheebiti",
+      "english": [
+        "good morning"
+      ],
+      "part_of_speech": "interjection",
+      "category": "greetings",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ukimisoochii",
+      "kana": "起きみそーちー",
+      "romaji": "ukimisoochii",
+      "english": [
+        "good morning"
+      ],
+      "part_of_speech": "interjection",
+      "category": "greetings",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "agaq",
+      "kana": "あがっ",
+      "romaji": "agaq",
+      "english": [
+        "ouch, ow"
+      ],
+      "part_of_speech": "interjection",
+      "category": "basics",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "aa",
+      "kana": "あー",
+      "romaji": "aa",
+      "english": [
+        "oh! ah! (an exclamation made when feeling deeply about something)"
+      ],
+      "part_of_speech": "interjection",
+      "category": "basics",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "hai",
+      "kana": "はい",
+      "romaji": "hai",
+      "english": [
+        "hello"
+      ],
+      "part_of_speech": "interjection",
+      "category": "greetings",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "heesai",
+      "kana": "へーさい",
+      "romaji": "heesai",
+      "english": [
+        "hello"
+      ],
+      "part_of_speech": "interjection",
+      "category": "greetings",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "heetai",
+      "kana": "へーたい",
+      "romaji": "heetai",
+      "english": [
+        "hello"
+      ],
+      "part_of_speech": "interjection",
+      "category": "greetings",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "moshimoshi",
+      "kana": "もしもし",
+      "romaji": "moshimoshi",
+      "english": [
+        "hello (used when answering the telephone)"
+      ],
+      "part_of_speech": "interjection",
+      "category": "greetings",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "wakayabiran",
+      "kana": "分かやびらん",
+      "romaji": "wakayabiran",
+      "english": [
+        "I don't understand (formal negative)"
+      ],
+      "part_of_speech": "phrase",
+      "category": "basics",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "uburee sabira",
+      "kana": "御無礼さびら",
+      "romaji": "uburee sabira",
+      "english": [
+        "Excuse me.",
+        "Goodbye."
+      ],
+      "part_of_speech": "phrase",
+      "category": "greetings",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "uganabira",
+      "kana": "拝なびら",
+      "romaji": "uganabira",
+      "english": [
+        "it's a pleasure to see you (a phrasal greeting)"
+      ],
+      "part_of_speech": "phrase",
+      "category": "greetings",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ukiti",
+      "kana": "起きてぃ",
+      "romaji": "ukiti",
+      "english": [
+        "good morning"
+      ],
+      "part_of_speech": "phrase",
+      "category": "greetings",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "shuukarasan",
+      "kana": "塩辛さん",
+      "romaji": "shuukarasan",
+      "english": [
+        "salty"
+      ],
+      "part_of_speech": "adjective",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kanasan",
+      "kana": "愛さん",
+      "romaji": "kanasan",
+      "english": [
+        "cute; pretty; dear; adorable",
+        "(old) beautiful",
+        "(Middle Okinawan) sad"
+      ],
+      "part_of_speech": "adjective",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "miisan",
+      "kana": "新ーさん",
+      "romaji": "miisan",
+      "english": [
+        "new"
+      ],
+      "part_of_speech": "adjective",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "shidasan",
+      "kana": "涼さん",
+      "romaji": "shidasan",
+      "english": [
+        "cool (weather); cold (weather)"
+      ],
+      "part_of_speech": "adjective",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "awasan",
+      "kana": "淡さん",
+      "romaji": "awasan",
+      "english": [
+        "pale; light"
+      ],
+      "part_of_speech": "adjective",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "churasan",
+      "kana": "清らさん",
+      "romaji": "churasan",
+      "english": [
+        "beautiful, lovely, pretty, elegant",
+        "clean, pure, chaste"
+      ],
+      "part_of_speech": "adjective",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "nukusan",
+      "kana": "温さん",
+      "romaji": "nukusan",
+      "english": [
+        "warm"
+      ],
+      "part_of_speech": "adjective",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "achisan",
+      "kana": "熱さん",
+      "romaji": "achisan",
+      "english": [
+        "hot (to the touch); hot (of weather)"
+      ],
+      "part_of_speech": "adjective",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "munugatai suchi",
+      "kana": "物語好ち",
+      "romaji": "munugatai suchi",
+      "english": [
+        "talkative"
+      ],
+      "part_of_speech": "adjective",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "karasan",
+      "kana": "辛さん",
+      "romaji": "karasan",
+      "english": [
+        "spicy"
+      ],
+      "part_of_speech": "adjective",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kurusan",
+      "kana": "黒さん",
+      "romaji": "kurusan",
+      "english": [
+        "black"
+      ],
+      "part_of_speech": "adjective",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ikirasan",
+      "kana": "いきらさん",
+      "romaji": "ikirasan",
+      "english": [
+        "few; fewer; less; very little; not so many"
+      ],
+      "part_of_speech": "adjective",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ibasan",
+      "kana": "いばさん",
+      "romaji": "ibasan",
+      "english": [
+        "narrow, confined"
+      ],
+      "part_of_speech": "adjective",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ufusan",
+      "kana": "うふさん",
+      "romaji": "ufusan",
+      "english": [
+        "there are many, there is much, there are numerous"
+      ],
+      "part_of_speech": "adjective",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "umussan",
+      "kana": "うむっさん",
+      "romaji": "umussan",
+      "english": [
+        "interesting; amusing; strange; funny"
+      ],
+      "part_of_speech": "adjective",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "takkwaimukkwai",
+      "kana": "たっくわいむっくわい",
+      "romaji": "takkwaimukkwai",
+      "english": [
+        "stuck together like mochi"
+      ],
+      "part_of_speech": "adjective",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "chidiri",
+      "kana": "ちでぃり",
+      "romaji": "chidiri",
+      "english": [
+        "inkstone"
+      ],
+      "part_of_speech": "adjective",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "magisan",
+      "kana": "まぎさん",
+      "romaji": "magisan",
+      "english": [
+        "big"
+      ],
+      "part_of_speech": "adjective",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ttinbusan",
+      "kana": "っんぶさん",
+      "romaji": "ttinbusan",
+      "english": [
+        "heavy"
+      ],
+      "part_of_speech": "adjective",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "butasan",
+      "kana": "ぶたさん",
+      "romaji": "butasan",
+      "english": [
+        "fat, obese"
+      ],
+      "part_of_speech": "adjective",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "yuu",
+      "kana": "良",
+      "romaji": "yuu",
+      "english": [
+        "well; often"
+      ],
+      "part_of_speech": "adverb",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "afaafaatu",
+      "kana": "あふぁあふぁーとぅ",
+      "romaji": "afaafaatu",
+      "english": [
+        "calmly, quietly",
+        "in a dilute way"
+      ],
+      "part_of_speech": "adverb",
+      "category": "descriptions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "maa",
+      "kana": "まー",
+      "romaji": "maa",
+      "english": [
+        "where"
+      ],
+      "part_of_speech": "adverb",
+      "category": "basics",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "again",
+      "kana": "上がいん",
+      "romaji": "again",
+      "english": [
+        "to rise; to ascend",
+        "to improve",
+        "to be finished, to be done"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "sagayun",
+      "kana": "下がゆん",
+      "romaji": "sagayun",
+      "english": [
+        "to drop; to descend"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "chukuyun",
+      "kana": "作ゆん",
+      "romaji": "chukuyun",
+      "english": [
+        "to make"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "njiyun",
+      "kana": "出じゆん",
+      "romaji": "njiyun",
+      "english": [
+        "to go out"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "hachun",
+      "kana": "剥ちゅん",
+      "romaji": "hachun",
+      "english": [
+        "to peel"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "masayun",
+      "kana": "勝ゆん",
+      "romaji": "masayun",
+      "english": [
+        "to excel, to surpass"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "tatachun",
+      "kana": "叩ちゅん",
+      "romaji": "tatachun",
+      "english": [
+        "to hit, to strike"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "suchun",
+      "kana": "好ちゅん",
+      "romaji": "suchun",
+      "english": [
+        "to like; to be fond of; to fancy"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "yushiin",
+      "kana": "寄しーん",
+      "romaji": "yushiin",
+      "english": [
+        "to approach, to call"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "machun",
+      "kana": "待ちゅん",
+      "romaji": "machun",
+      "english": [
+        "to wait (for)"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "usagain",
+      "kana": "御下がいん",
+      "romaji": "usagain",
+      "english": [
+        "to eat, to drink (honorific)"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "nain",
+      "kana": "成いん",
+      "romaji": "nain",
+      "english": [
+        "to become; to be; to reach"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "tatakayun",
+      "kana": "戦ゆん",
+      "romaji": "tatakayun",
+      "english": [
+        "to fight"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "uchun",
+      "kana": "打ちゅん",
+      "romaji": "uchun",
+      "english": [
+        "to hit, to strike"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ushun",
+      "kana": "押すん",
+      "romaji": "ushun",
+      "english": [
+        "to push; to thrust; to shove",
+        "to press",
+        "to stamp"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "muchun",
+      "kana": "持ちゅん",
+      "romaji": "muchun",
+      "english": [
+        "to have, to possess, to hold"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "shitiyun",
+      "kana": "捨てぃゆん",
+      "romaji": "shitiyun",
+      "english": [
+        "to abandon"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "suroyun",
+      "kana": "揃ゆん",
+      "romaji": "suroyun",
+      "english": [
+        "to gather"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "hariyun",
+      "kana": "晴りゆん",
+      "romaji": "hariyun",
+      "english": [
+        "to clear (of weather)"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kachun",
+      "kana": "書ちゅん",
+      "romaji": "kachun",
+      "english": [
+        "to write",
+        "to draw; to paint"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "an",
+      "kana": "有ん",
+      "romaji": "an",
+      "english": [
+        "to be"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "chuun",
+      "kana": "来ーん",
+      "romaji": "chuun",
+      "english": [
+        "to come"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "wachun",
+      "kana": "沸ちゅん",
+      "romaji": "wachun",
+      "english": [
+        "to boil"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "wiijun",
+      "kana": "泳じゅん",
+      "romaji": "wiijun",
+      "english": [
+        "to swim"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "nguiyun",
+      "kana": "濁ぐぃゆん",
+      "romaji": "nguiyun",
+      "english": [
+        "to be muddy; to be turbid; to be impure"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "nran",
+      "kana": "無らん",
+      "romaji": "nran",
+      "english": [
+        "to not be; to not have; there is not"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "nasun",
+      "kana": "生すん",
+      "romaji": "nasun",
+      "english": [
+        "to give birth"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "shirugiyun",
+      "kana": "白ぎゆん",
+      "romaji": "shirugiyun",
+      "english": [
+        "to turn white"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "tachun",
+      "kana": "立ちゅん",
+      "romaji": "tachun",
+      "english": [
+        "to stand"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "chichun",
+      "kana": "聞ちゅん",
+      "romaji": "chichun",
+      "english": [
+        "to hear, to listen (to)",
+        "to ask"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "in",
+      "kana": "言ん",
+      "romaji": "in",
+      "english": [
+        "to say, to tell somebody"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "hanasun",
+      "kana": "話すん",
+      "romaji": "hanasun",
+      "english": [
+        "to speak, to talk"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ukiyun",
+      "kana": "起きゆん",
+      "romaji": "ukiyun",
+      "english": [
+        "to wake up"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "haniin",
+      "kana": "跳にーん",
+      "romaji": "haniin",
+      "english": [
+        "to jump, to hop, to bounce"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "uyun",
+      "kana": "酔ゆん",
+      "romaji": "uyun",
+      "english": [
+        "to get drunk; to become intoxicated",
+        "to feel nauseated; to feel sick"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "uyun",
+      "kana": "降ゆん",
+      "romaji": "uyun",
+      "english": [
+        "to fall from the sky, to precipitate"
+      ],
+      "part_of_speech": "verb",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "tubun",
+      "kana": "飛ぶん",
+      "romaji": "tubun",
+      "english": [
+        "to fly, to soar"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kamun",
+      "kana": "食むん",
+      "romaji": "kamun",
+      "english": [
+        "to eat"
+      ],
+      "part_of_speech": "verb",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "numun",
+      "kana": "飲むん",
+      "romaji": "numun",
+      "english": [
+        "to drink",
+        "to swallow"
+      ],
+      "part_of_speech": "verb",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "abiyun",
+      "kana": "あびゆん",
+      "romaji": "abiyun",
+      "english": [
+        "to shout; to yell; to howl"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ichichun",
+      "kana": "いちちゅん",
+      "romaji": "ichichun",
+      "english": [
+        "to live"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "imiyun",
+      "kana": "いみゆん",
+      "romaji": "imiyun",
+      "english": [
+        "to demand"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "iyun",
+      "kana": "いゆん",
+      "romaji": "iyun",
+      "english": [
+        "to enter",
+        "to need"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "utiyun",
+      "kana": "うてぃゆん",
+      "romaji": "utiyun",
+      "english": [
+        "to fall"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "shijiyun",
+      "kana": "しじゆん",
+      "romaji": "shijiyun",
+      "english": [
+        "to go by, to pass across"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "shipiyun",
+      "kana": "しぴゆん",
+      "romaji": "shipiyun",
+      "english": [
+        "to blow one's nose"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "sun",
+      "kana": "すん",
+      "romaji": "sun",
+      "english": [
+        "to do",
+        "(suffix) creates verbs out of nouns"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "nnji",
+      "kana": "っんじ",
+      "romaji": "nnji",
+      "english": [
+        "went (conjunctive form of ichun, 'to go')"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "deebiru",
+      "kana": "でーびる",
+      "romaji": "deebiru",
+      "english": [
+        "to be (polite)"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "neeyun",
+      "kana": "ねーゆん",
+      "romaji": "neeyun",
+      "english": [
+        "to wither, to wilt",
+        "to become weak"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "finayun",
+      "kana": "ふぃなゆん",
+      "romaji": "finayun",
+      "english": [
+        "to decrease"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "fuyun",
+      "kana": "ふゆん",
+      "romaji": "fuyun",
+      "english": [
+        "to dig"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "maasun",
+      "kana": "まーすん",
+      "romaji": "maasun",
+      "english": [
+        "to die"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "yachun",
+      "kana": "やちゅん",
+      "romaji": "yachun",
+      "english": [
+        "to burn, to grill",
+        "to feel jealousy"
+      ],
+      "part_of_speech": "verb",
+      "category": "actions",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "nuu",
+      "kana": "何",
+      "romaji": "nuu",
+      "english": [
+        "what"
+      ],
+      "part_of_speech": "pronoun",
+      "category": "grammar",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "unju",
+      "kana": "うんじゅ",
+      "romaji": "unju",
+      "english": [
+        "you (second-person pronoun, polite)"
+      ],
+      "part_of_speech": "pronoun",
+      "category": "grammar",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "usumee",
+      "kana": "御総様",
+      "romaji": "usumee",
+      "english": [
+        "everyone"
+      ],
+      "part_of_speech": "pronoun",
+      "category": "grammar",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "wan",
+      "kana": "我ん",
+      "romaji": "wan",
+      "english": [
+        "I, me (first-person pronoun)"
+      ],
+      "part_of_speech": "pronoun",
+      "category": "grammar",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "wannee",
+      "kana": "我んねー",
+      "romaji": "wannee",
+      "english": [
+        "as for me (topicalized form of wan, 'I, me')"
+      ],
+      "part_of_speech": "pronoun",
+      "category": "grammar",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "wattaa",
+      "kana": "我達",
+      "romaji": "wattaa",
+      "english": [
+        "we, us, ourselves",
+        "our"
+      ],
+      "part_of_speech": "pronoun",
+      "category": "grammar",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ku",
+      "kana": "く",
+      "romaji": "ku",
+      "english": [
+        "this"
+      ],
+      "part_of_speech": "pronoun",
+      "category": "grammar",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kuma",
+      "kana": "くま",
+      "romaji": "kuma",
+      "english": [
+        "here; this place (near the speaker)"
+      ],
+      "part_of_speech": "pronoun",
+      "category": "grammar",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kuri",
+      "kana": "くり",
+      "romaji": "kuri",
+      "english": [
+        "this"
+      ],
+      "part_of_speech": "pronoun",
+      "category": "grammar",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kuree",
+      "kana": "くれー",
+      "romaji": "kuree",
+      "english": [
+        "as for this (topicalized form of kuri, 'this')"
+      ],
+      "part_of_speech": "pronoun",
+      "category": "grammar",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "yyaa",
+      "kana": "っやー",
+      "romaji": "yyaa",
+      "english": [
+        "you (second-person pronoun)"
+      ],
+      "part_of_speech": "pronoun",
+      "category": "grammar",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "duu",
+      "kana": "どぅー",
+      "romaji": "duu",
+      "english": [
+        "body",
+        "oneself (reflexive pronoun)"
+      ],
+      "part_of_speech": "pronoun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ga",
+      "kana": "が",
+      "romaji": "ga",
+      "english": [
+        "genitive marker (of, -'s)",
+        "nominative marker (subject)",
+        "interrogative particle (in wh-questions)"
+      ],
+      "part_of_speech": "particle",
+      "category": "grammar",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "nu",
+      "kana": "ぬ",
+      "romaji": "nu",
+      "english": [
+        "genitive marker (of, -'s)",
+        "nominative marker (subject)"
+      ],
+      "part_of_speech": "particle",
+      "category": "grammar",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ya",
+      "kana": "や",
+      "romaji": "ya",
+      "english": [
+        "topic marker"
+      ],
+      "part_of_speech": "particle",
+      "category": "grammar",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "yu",
+      "kana": "ゆ",
+      "romaji": "yu",
+      "english": [
+        "accusative case particle",
+        "away from, off",
+        "along, following a route"
+      ],
+      "part_of_speech": "particle",
+      "category": "grammar",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "wutooti",
+      "kana": "をぅとーてぃ",
+      "romaji": "wutooti",
+      "english": [
+        "at (location indicator)"
+      ],
+      "part_of_speech": "particle",
+      "category": "grammar",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "nkai",
+      "kana": "んかい",
+      "romaji": "nkai",
+      "english": [
+        "locative marker: at, in, to"
+      ],
+      "part_of_speech": "particle",
+      "category": "grammar",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "chui",
+      "kana": "人",
+      "romaji": "chui",
+      "english": [
+        "counter for number of people"
+      ],
+      "part_of_speech": "counter",
+      "category": "numbers",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "yuru",
+      "kana": "夜",
+      "romaji": "yuru",
+      "english": [
+        "counter for nights"
+      ],
+      "part_of_speech": "counter",
+      "category": "numbers",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "fun",
+      "kana": "ふん",
+      "romaji": "fun",
+      "english": [
+        "counter for long cylindrical objects, films or TV shows, home runs or goals"
+      ],
+      "part_of_speech": "counter",
+      "category": "numbers",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "mee",
+      "kana": "めー",
+      "romaji": "mee",
+      "english": [
+        "counter for flat thin objects or sheets"
+      ],
+      "part_of_speech": "counter",
+      "category": "numbers",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "chi",
+      "kana": "ち",
+      "romaji": "chi",
+      "english": [
+        "suffix attached to Okinawan numerals (tii-, taa-, mii-, ...), used to count almost anything"
+      ],
+      "part_of_speech": "counter",
+      "category": "numbers",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "tiichi",
+      "kana": "一ち",
+      "romaji": "tiichi",
+      "english": [
+        "one (thing)"
+      ],
+      "part_of_speech": "numeral",
+      "category": "numbers",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "taachi",
+      "kana": "二ち",
+      "romaji": "taachi",
+      "english": [
+        "two (things)"
+      ],
+      "part_of_speech": "numeral",
+      "category": "numbers",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "miichi",
+      "kana": "三ち",
+      "romaji": "miichi",
+      "english": [
+        "three (things)"
+      ],
+      "part_of_speech": "numeral",
+      "category": "numbers",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "yuuchi",
+      "kana": "四ち",
+      "romaji": "yuuchi",
+      "english": [
+        "four (things)"
+      ],
+      "part_of_speech": "numeral",
+      "category": "numbers",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ichichi",
+      "kana": "五ち",
+      "romaji": "ichichi",
+      "english": [
+        "five (things)"
+      ],
+      "part_of_speech": "numeral",
+      "category": "numbers",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "muuchi",
+      "kana": "六ち",
+      "romaji": "muuchi",
+      "english": [
+        "six (things)"
+      ],
+      "part_of_speech": "numeral",
+      "category": "numbers",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "nanachi",
+      "kana": "七ち",
+      "romaji": "nanachi",
+      "english": [
+        "seven (things)"
+      ],
+      "part_of_speech": "numeral",
+      "category": "numbers",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "yaachi",
+      "kana": "八ち",
+      "romaji": "yaachi",
+      "english": [
+        "eight (things)"
+      ],
+      "part_of_speech": "numeral",
+      "category": "numbers",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kukunuchi",
+      "kana": "九ち",
+      "romaji": "kukunuchi",
+      "english": [
+        "nine (things)"
+      ],
+      "part_of_speech": "numeral",
+      "category": "numbers",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "anguwaa",
+      "kana": "あんぐゎー",
+      "romaji": "anguwaa",
+      "english": [
+        "older sister"
+      ],
+      "part_of_speech": "noun",
+      "category": "family",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "anmaa",
+      "kana": "あんまー",
+      "romaji": "anmaa",
+      "english": [
+        "mom; mother"
+      ],
+      "part_of_speech": "noun",
+      "category": "family",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "suu",
+      "kana": "すー",
+      "romaji": "suu",
+      "english": [
+        "father, dad"
+      ],
+      "part_of_speech": "noun",
+      "category": "family",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "taarii",
+      "kana": "たーりー",
+      "romaji": "taarii",
+      "english": [
+        "father"
+      ],
+      "part_of_speech": "noun",
+      "category": "family",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "shiija",
+      "kana": "しーじゃ",
+      "romaji": "shiija",
+      "english": [
+        "older sibling; older brother; older sister; senior"
+      ],
+      "part_of_speech": "noun",
+      "category": "family",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kkwa",
+      "kana": "っくゎ",
+      "romaji": "kkwa",
+      "english": [
+        "child, children"
+      ],
+      "part_of_speech": "noun",
+      "category": "family",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "muuku",
+      "kana": "むーく",
+      "romaji": "muuku",
+      "english": [
+        "son-in-law; bridegroom"
+      ],
+      "part_of_speech": "noun",
+      "category": "family",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "tuji",
+      "kana": "刀自",
+      "romaji": "tuji",
+      "english": [
+        "wife"
+      ],
+      "part_of_speech": "noun",
+      "category": "family",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "wikii",
+      "kana": "ゐきー",
+      "romaji": "wikii",
+      "english": [
+        "brother (of a female)"
+      ],
+      "part_of_speech": "noun",
+      "category": "family",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "wunai",
+      "kana": "をぅない",
+      "romaji": "wunai",
+      "english": [
+        "sister (of a male)"
+      ],
+      "part_of_speech": "noun",
+      "category": "family",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "wonari",
+      "kana": "をなり",
+      "romaji": "wonari",
+      "english": [
+        "younger sister"
+      ],
+      "part_of_speech": "noun",
+      "category": "family",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "wikiga",
+      "kana": "ゐきが",
+      "romaji": "wikiga",
+      "english": [
+        "man"
+      ],
+      "part_of_speech": "noun",
+      "category": "people",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "winagu",
+      "kana": "ゐなぐ",
+      "romaji": "winagu",
+      "english": [
+        "woman"
+      ],
+      "part_of_speech": "noun",
+      "category": "people",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "cchu",
+      "kana": "っちゅ",
+      "romaji": "cchu",
+      "english": [
+        "person, human"
+      ],
+      "part_of_speech": "noun",
+      "category": "people",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "shi",
+      "kana": "し",
+      "romaji": "shi",
+      "english": [
+        "person; someone"
+      ],
+      "part_of_speech": "noun",
+      "category": "people",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ufucchu",
+      "kana": "うふっちゅ",
+      "romaji": "ufucchu",
+      "english": [
+        "adult"
+      ],
+      "part_of_speech": "noun",
+      "category": "people",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "dushi",
+      "kana": "どぅし",
+      "romaji": "dushi",
+      "english": [
+        "friend"
+      ],
+      "part_of_speech": "noun",
+      "category": "people",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "tunai",
+      "kana": "とぅない",
+      "romaji": "tunai",
+      "english": [
+        "neighbour"
+      ],
+      "part_of_speech": "noun",
+      "category": "people",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "sinsii",
+      "kana": "先生",
+      "romaji": "sinsii",
+      "english": [
+        "teacher"
+      ],
+      "part_of_speech": "noun",
+      "category": "people",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "isa",
+      "kana": "いさ",
+      "romaji": "isa",
+      "english": [
+        "doctor"
+      ],
+      "part_of_speech": "noun",
+      "category": "people",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "naa",
+      "kana": "なー",
+      "romaji": "naa",
+      "english": [
+        "name"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "nooji",
+      "kana": "のーじ",
+      "romaji": "nooji",
+      "english": [
+        "surname, family name, last name"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "attami",
+      "kana": "あったみ",
+      "romaji": "attami",
+      "english": [
+        "meat (well made)"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "anda",
+      "kana": "あんだ",
+      "romaji": "anda",
+      "english": [
+        "oil; fat; fuel"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "aasa",
+      "kana": "あーさ",
+      "romaji": "aasa",
+      "english": [
+        "sea lettuce"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "saataa",
+      "kana": "さーたー",
+      "romaji": "saataa",
+      "english": [
+        "sugar"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "saataa andagii",
+      "kana": "さーたーあんだぎー",
+      "romaji": "saataa andagii",
+      "english": [
+        "sata andagi (an Okinawan doughnut)"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "saki",
+      "kana": "さき",
+      "romaji": "saki",
+      "english": [
+        "alcoholic beverage (e.g., wine, whisky, or sake)"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "sooyuu",
+      "kana": "そーゆー",
+      "romaji": "sooyuu",
+      "english": [
+        "soy sauce"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "gooyaa chanpuruu",
+      "kana": "ごーやーちゃんぷるー",
+      "romaji": "gooyaa chanpuruu",
+      "english": [
+        "bitter melon chanpuru (stir-fry)"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "chanpuruu",
+      "kana": "ちゃんぷるー",
+      "romaji": "chanpuruu",
+      "english": [
+        "chanpuru (an Okinawan stir-fried dish of tofu, vegetables, and oil)"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "tamanaa",
+      "kana": "たまなー",
+      "romaji": "tamanaa",
+      "english": [
+        "cabbage"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "yashee",
+      "kana": "やしぇー",
+      "romaji": "yashee",
+      "english": [
+        "vegetable"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kiiui",
+      "kana": "きーうい",
+      "romaji": "kiiui",
+      "english": [
+        "cucumber"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kanda",
+      "kana": "かんだ",
+      "romaji": "kanda",
+      "english": [
+        "sweet potato; creeper plant, vine"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ichubi",
+      "kana": "いちゅび",
+      "romaji": "ichubi",
+      "english": [
+        "strawberry"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "mumu",
+      "kana": "桃",
+      "romaji": "mumu",
+      "english": [
+        "peach"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "michi",
+      "kana": "蜜",
+      "romaji": "michi",
+      "english": [
+        "honey"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "firu",
+      "kana": "ふぃる",
+      "romaji": "firu",
+      "english": [
+        "garlic"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "bira",
+      "kana": "びら",
+      "romaji": "bira",
+      "english": [
+        "garlic chive (Allium tuberosum)"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ucha",
+      "kana": "う菓子",
+      "romaji": "ucha",
+      "english": [
+        "sweet, confection; candy; pastry, cake, cookie"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "muuchi",
+      "kana": "餅",
+      "romaji": "muuchi",
+      "english": [
+        "mochi"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kurusaataa",
+      "kana": "黒砂糖",
+      "romaji": "kurusaataa",
+      "english": [
+        "brown sugar"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "hakka",
+      "kana": "薄荷",
+      "romaji": "hakka",
+      "english": [
+        "mint"
+      ],
+      "part_of_speech": "noun",
+      "category": "food",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "duu",
+      "kana": "体",
+      "romaji": "duu",
+      "english": [
+        "body"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "chiburu",
+      "kana": "ちぶる",
+      "romaji": "chiburu",
+      "english": [
+        "head; an intelligent person"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "chira",
+      "kana": "ちら",
+      "romaji": "chira",
+      "english": [
+        "face"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "mii",
+      "kana": "みー",
+      "romaji": "mii",
+      "english": [
+        "eye; sight"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "min",
+      "kana": "みん",
+      "romaji": "min",
+      "english": [
+        "ear"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "hana",
+      "kana": "鼻",
+      "romaji": "hana",
+      "english": [
+        "nose"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "haa",
+      "kana": "はー",
+      "romaji": "haa",
+      "english": [
+        "tooth"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "shiba",
+      "kana": "しば",
+      "romaji": "shiba",
+      "english": [
+        "lip, tongue"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "shicha",
+      "kana": "舌",
+      "romaji": "shicha",
+      "english": [
+        "tongue"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kubi",
+      "kana": "くび",
+      "romaji": "kubi",
+      "english": [
+        "neck"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "nuudii",
+      "kana": "ぬーでぃー",
+      "romaji": "nuudii",
+      "english": [
+        "throat"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "tii",
+      "kana": "てぃー",
+      "romaji": "tii",
+      "english": [
+        "hand"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "iibi",
+      "kana": "いーび",
+      "romaji": "iibi",
+      "english": [
+        "finger"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "fisa",
+      "kana": "ふぃさ",
+      "romaji": "fisa",
+      "english": [
+        "foot, leg"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ashi",
+      "kana": "あし",
+      "romaji": "ashi",
+      "english": [
+        "sweat",
+        "foot"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "nagani",
+      "kana": "ながに",
+      "romaji": "nagani",
+      "english": [
+        "back"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "chibi",
+      "kana": "ちび",
+      "romaji": "chibi",
+      "english": [
+        "butt"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "karaji",
+      "kana": "からじ",
+      "romaji": "karaji",
+      "english": [
+        "hair"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kii",
+      "kana": "きー",
+      "romaji": "kii",
+      "english": [
+        "hair, fur",
+        "tree"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "shichafiji",
+      "kana": "しちゃふぃじ",
+      "romaji": "shichafiji",
+      "english": [
+        "beard"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "chii",
+      "kana": "ちー",
+      "romaji": "chii",
+      "english": [
+        "blood"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "funi",
+      "kana": "骨",
+      "romaji": "funi",
+      "english": [
+        "bone"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "iichi",
+      "kana": "いーち",
+      "romaji": "iichi",
+      "english": [
+        "breath"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ayo",
+      "kana": "あよ",
+      "romaji": "ayo",
+      "english": [
+        "liver"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kukuru",
+      "kana": "くくる",
+      "romaji": "kukuru",
+      "english": [
+        "heart"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "mabui",
+      "kana": "まぶい",
+      "romaji": "mabui",
+      "english": [
+        "spirit"
+      ],
+      "part_of_speech": "noun",
+      "category": "culture",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "tamashii",
+      "kana": "たましー",
+      "romaji": "tamashii",
+      "english": [
+        "soul, spirit, mind"
+      ],
+      "part_of_speech": "noun",
+      "category": "culture",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ami",
+      "kana": "あみ",
+      "romaji": "ami",
+      "english": [
+        "rain"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kaji",
+      "kana": "かじ",
+      "romaji": "kaji",
+      "english": [
+        "wind"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kannai",
+      "kana": "かんない",
+      "romaji": "kannai",
+      "english": [
+        "thunder"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kumu",
+      "kana": "くむ",
+      "romaji": "kumu",
+      "english": [
+        "cloud"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "sura",
+      "kana": "すら",
+      "romaji": "sura",
+      "english": [
+        "sky"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "tiida",
+      "kana": "てぃーだ",
+      "romaji": "tiida",
+      "english": [
+        "sun"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "chichi",
+      "kana": "ちち",
+      "romaji": "chichi",
+      "english": [
+        "moon"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "fushi",
+      "kana": "ふし",
+      "romaji": "fushi",
+      "english": [
+        "star"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "yuchi",
+      "kana": "ゆち",
+      "romaji": "yuchi",
+      "english": [
+        "snow; hail"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "umi",
+      "kana": "海",
+      "romaji": "umi",
+      "english": [
+        "sea"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "san",
+      "kana": "さん",
+      "romaji": "san",
+      "english": [
+        "mountain"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "tani",
+      "kana": "たに",
+      "romaji": "tani",
+      "english": [
+        "valley"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "shima",
+      "kana": "しま",
+      "romaji": "shima",
+      "english": [
+        "island; community"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kaara",
+      "kana": "かーら",
+      "romaji": "kaara",
+      "english": [
+        "river",
+        "roof tile"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "miji",
+      "kana": "みじ",
+      "romaji": "miji",
+      "english": [
+        "water"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ishi",
+      "kana": "いし",
+      "romaji": "ishi",
+      "english": [
+        "stone"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kusa",
+      "kana": "くさ",
+      "romaji": "kusa",
+      "english": [
+        "grass"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "hana",
+      "kana": "花",
+      "romaji": "hana",
+      "english": [
+        "flower"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "faa",
+      "kana": "ふぁー",
+      "romaji": "faa",
+      "english": [
+        "leaf"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "yuda",
+      "kana": "ゆだ",
+      "romaji": "yuda",
+      "english": [
+        "branch"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "nii",
+      "kana": "にー",
+      "romaji": "nii",
+      "english": [
+        "root"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "agari",
+      "kana": "あがり",
+      "romaji": "agari",
+      "english": [
+        "east"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "iri",
+      "kana": "いり",
+      "romaji": "iri",
+      "english": [
+        "west"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "nishi",
+      "kana": "にし",
+      "romaji": "nishi",
+      "english": [
+        "north"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ncha",
+      "kana": "んちゃ",
+      "romaji": "ncha",
+      "english": [
+        "earth"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "sangu",
+      "kana": "さんぐ",
+      "romaji": "sangu",
+      "english": [
+        "coral"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "in",
+      "kana": "いん",
+      "romaji": "in",
+      "english": [
+        "dog"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "chiichaa",
+      "kana": "ちーちゃー",
+      "romaji": "chiichaa",
+      "english": [
+        "dog"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "mayaa",
+      "kana": "まやー",
+      "romaji": "mayaa",
+      "english": [
+        "cat"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ushi",
+      "kana": "うし",
+      "romaji": "ushi",
+      "english": [
+        "cow"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "wwaa",
+      "kana": "っわー",
+      "romaji": "wwaa",
+      "english": [
+        "pig, swine, hog"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "nmaa",
+      "kana": "馬",
+      "romaji": "nmaa",
+      "english": [
+        "horse"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "tui",
+      "kana": "とぅい",
+      "romaji": "tui",
+      "english": [
+        "bird; chicken"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "iyu",
+      "kana": "いゆ",
+      "romaji": "iyu",
+      "english": [
+        "fish"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "habu",
+      "kana": "はぶ",
+      "romaji": "habu",
+      "english": [
+        "snake, viper, Okinawan habu"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ai",
+      "kana": "あい",
+      "romaji": "ai",
+      "english": [
+        "ant"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "hachaa",
+      "kana": "はちゃー",
+      "romaji": "hachaa",
+      "english": [
+        "bee; wasp; hornet"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "garasaa",
+      "kana": "がらさー",
+      "romaji": "garasaa",
+      "english": [
+        "crow, raven"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "atabichi",
+      "kana": "あたびち",
+      "romaji": "atabichi",
+      "english": [
+        "frog"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kuma",
+      "kana": "熊",
+      "romaji": "kuma",
+      "english": [
+        "bear"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "tura",
+      "kana": "とぅら",
+      "romaji": "tura",
+      "english": [
+        "tiger"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "tanuki",
+      "kana": "たぬき",
+      "romaji": "tanuki",
+      "english": [
+        "raccoon dog"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "chichini",
+      "kana": "ちちに",
+      "romaji": "chichini",
+      "english": [
+        "fox"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ttwenchu",
+      "kana": "っゑんちゅ",
+      "romaji": "ttwenchu",
+      "english": [
+        "mouse"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "fiitu",
+      "kana": "ふぃーとぅ",
+      "romaji": "fiitu",
+      "english": [
+        "dolphin"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "gujira",
+      "kana": "ぐじら",
+      "romaji": "gujira",
+      "english": [
+        "whale"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "miji ushi",
+      "kana": "みじうし",
+      "romaji": "miji ushi",
+      "english": [
+        "water buffalo"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "jiinaa",
+      "kana": "じーなー",
+      "romaji": "jiinaa",
+      "english": [
+        "firefly"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kuubaa",
+      "kana": "くーばー",
+      "romaji": "kuubaa",
+      "english": [
+        "spider"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kaabuyaa",
+      "kana": "かーぶやー",
+      "romaji": "kaabuyaa",
+      "english": [
+        "bat (small flying mammal)"
+      ],
+      "part_of_speech": "noun",
+      "category": "animals",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kyuu",
+      "kana": "今日",
+      "romaji": "kyuu",
+      "english": [
+        "today"
+      ],
+      "part_of_speech": "noun",
+      "category": "time",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "achaa",
+      "kana": "明日",
+      "romaji": "achaa",
+      "english": [
+        "tomorrow"
+      ],
+      "part_of_speech": "noun",
+      "category": "time",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "asatti",
+      "kana": "明後日",
+      "romaji": "asatti",
+      "english": [
+        "day after tomorrow"
+      ],
+      "part_of_speech": "noun",
+      "category": "time",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kutushi",
+      "kana": "くとぅし",
+      "romaji": "kutushi",
+      "english": [
+        "this year"
+      ],
+      "part_of_speech": "noun",
+      "category": "time",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kuju",
+      "kana": "去年",
+      "romaji": "kuju",
+      "english": [
+        "last year"
+      ],
+      "part_of_speech": "noun",
+      "category": "time",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "yuru",
+      "kana": "ゆる",
+      "romaji": "yuru",
+      "english": [
+        "night"
+      ],
+      "part_of_speech": "noun",
+      "category": "time",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "yuu",
+      "kana": "ゆー",
+      "romaji": "yuu",
+      "english": [
+        "night, evening",
+        "age, era, world"
+      ],
+      "part_of_speech": "noun",
+      "category": "time",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "yusandi",
+      "kana": "ゆさんでぃ",
+      "romaji": "yusandi",
+      "english": [
+        "evening"
+      ],
+      "part_of_speech": "noun",
+      "category": "time",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "sutumiti",
+      "kana": "すとぅみてぃ",
+      "romaji": "sutumiti",
+      "english": [
+        "early morning"
+      ],
+      "part_of_speech": "noun",
+      "category": "time",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "akachichi",
+      "kana": "あかちち",
+      "romaji": "akachichi",
+      "english": [
+        "dawn, daybreak"
+      ],
+      "part_of_speech": "noun",
+      "category": "time",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "achi",
+      "kana": "あち",
+      "romaji": "achi",
+      "english": [
+        "autumn; fall"
+      ],
+      "part_of_speech": "noun",
+      "category": "time",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "fuyu",
+      "kana": "ふゆ",
+      "romaji": "fuyu",
+      "english": [
+        "winter"
+      ],
+      "part_of_speech": "noun",
+      "category": "time",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "guwachi",
+      "kana": "ぐゎち",
+      "romaji": "guwachi",
+      "english": [
+        "month"
+      ],
+      "part_of_speech": "noun",
+      "category": "time",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "sooguwachi",
+      "kana": "そーぐゎち",
+      "romaji": "sooguwachi",
+      "english": [
+        "first month of the year; New Year"
+      ],
+      "part_of_speech": "noun",
+      "category": "time",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "umaribii",
+      "kana": "うまりびー",
+      "romaji": "umaribii",
+      "english": [
+        "birthday"
+      ],
+      "part_of_speech": "noun",
+      "category": "time",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "yaa",
+      "kana": "やー",
+      "romaji": "yaa",
+      "english": [
+        "house"
+      ],
+      "part_of_speech": "noun",
+      "category": "places",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "miiyaa",
+      "kana": "みーやー",
+      "romaji": "miiyaa",
+      "english": [
+        "new house"
+      ],
+      "part_of_speech": "noun",
+      "category": "places",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "nakamee",
+      "kana": "なかめー",
+      "romaji": "nakamee",
+      "english": [
+        "living room"
+      ],
+      "part_of_speech": "noun",
+      "category": "places",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "gushiku",
+      "kana": "ぐしく",
+      "romaji": "gushiku",
+      "english": [
+        "a castle, fortress, stronghold; a sacred place (gusuku)"
+      ],
+      "part_of_speech": "noun",
+      "category": "places",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "shikee",
+      "kana": "しけー",
+      "romaji": "shikee",
+      "english": [
+        "world, society"
+      ],
+      "part_of_speech": "noun",
+      "category": "places",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kanguku",
+      "kana": "かんぐく",
+      "romaji": "kanguku",
+      "english": [
+        "prison"
+      ],
+      "part_of_speech": "noun",
+      "category": "places",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "uunii",
+      "kana": "うーに",
+      "romaji": "uunii",
+      "english": [
+        "ship"
+      ],
+      "part_of_speech": "noun",
+      "category": "places",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "funi",
+      "kana": "ふに",
+      "romaji": "funi",
+      "english": [
+        "boat"
+      ],
+      "part_of_speech": "noun",
+      "category": "places",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kuruma",
+      "kana": "くるま",
+      "romaji": "kuruma",
+      "english": [
+        "car, wheel"
+      ],
+      "part_of_speech": "noun",
+      "category": "places",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "michi",
+      "kana": "道",
+      "romaji": "michi",
+      "english": [
+        "road, path, way"
+      ],
+      "part_of_speech": "noun",
+      "category": "places",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "uchinaaguchi",
+      "kana": "うちなーぐち",
+      "romaji": "uchinaaguchi",
+      "english": [
+        "the Okinawan language"
+      ],
+      "part_of_speech": "noun",
+      "category": "culture",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "shimakutuuba",
+      "kana": "しまくとぅば",
+      "romaji": "shimakutuuba",
+      "english": [
+        "the local language or dialect of an island, especially of Okinawa or Amami"
+      ],
+      "part_of_speech": "noun",
+      "category": "culture",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kutuuba",
+      "kana": "くとぅば",
+      "romaji": "kutuuba",
+      "english": [
+        "language, speech, dialect, word(s)"
+      ],
+      "part_of_speech": "noun",
+      "category": "culture",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "yamatuuguchi",
+      "kana": "やまとぅぐち",
+      "romaji": "yamatuuguchi",
+      "english": [
+        "Japanese language"
+      ],
+      "part_of_speech": "noun",
+      "category": "culture",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "yamatunchu",
+      "kana": "やまとぅんちゅ",
+      "romaji": "yamatunchu",
+      "english": [
+        "a Yamato person, a mainlander (non-Ryukyuan Japanese)"
+      ],
+      "part_of_speech": "noun",
+      "category": "people",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "naichaa",
+      "kana": "ないちゃー",
+      "romaji": "naichaa",
+      "english": [
+        "a mainlander; someone from mainland Japan"
+      ],
+      "part_of_speech": "noun",
+      "category": "people",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "amirikaa",
+      "kana": "アミリカー",
+      "romaji": "amirikaa",
+      "english": [
+        "an American, a person from the United States"
+      ],
+      "part_of_speech": "noun",
+      "category": "people",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "sanshin",
+      "kana": "さんしん",
+      "romaji": "sanshin",
+      "english": [
+        "sanshin (a three-stringed Okinawan lute, precursor to the shamisen)"
+      ],
+      "part_of_speech": "noun",
+      "category": "culture",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "uta",
+      "kana": "うた",
+      "romaji": "uta",
+      "english": [
+        "song"
+      ],
+      "part_of_speech": "noun",
+      "category": "culture",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "bushi",
+      "kana": "ぶし",
+      "romaji": "bushi",
+      "english": [
+        "a song, poem or musical piece"
+      ],
+      "part_of_speech": "noun",
+      "category": "culture",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ruuka",
+      "kana": "るーか",
+      "romaji": "ruuka",
+      "english": [
+        "ryuka (a form of Okinawan poetry/song)"
+      ],
+      "part_of_speech": "noun",
+      "category": "culture",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ungaku",
+      "kana": "うんがく",
+      "romaji": "ungaku",
+      "english": [
+        "music"
+      ],
+      "part_of_speech": "noun",
+      "category": "culture",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kaminigee",
+      "kana": "かみにげー",
+      "romaji": "kaminigee",
+      "english": [
+        "prayer"
+      ],
+      "part_of_speech": "noun",
+      "category": "culture",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "niibichi",
+      "kana": "にーびち",
+      "romaji": "niibichi",
+      "english": [
+        "marriage, wedding"
+      ],
+      "part_of_speech": "noun",
+      "category": "culture",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "nasaki",
+      "kana": "なさき",
+      "romaji": "nasaki",
+      "english": [
+        "love"
+      ],
+      "part_of_speech": "noun",
+      "category": "culture",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "tooti",
+      "kana": "唐手",
+      "romaji": "tooti",
+      "english": [
+        "karate"
+      ],
+      "part_of_speech": "noun",
+      "category": "culture",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "uunsuu",
+      "kana": "うんすー",
+      "romaji": "uunsuu",
+      "english": [
+        "fate, destiny"
+      ],
+      "part_of_speech": "noun",
+      "category": "culture",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "yuurii",
+      "kana": "ゆーりー",
+      "romaji": "yuurii",
+      "english": [
+        "ghost"
+      ],
+      "part_of_speech": "noun",
+      "category": "culture",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "munu",
+      "kana": "むぬ",
+      "romaji": "munu",
+      "english": [
+        "thing"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kagan",
+      "kana": "かがん",
+      "romaji": "kagan",
+      "english": [
+        "mirror"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ganchoo",
+      "kana": "がんちょー",
+      "romaji": "ganchoo",
+      "english": [
+        "glasses, spectacles"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "sabachi",
+      "kana": "さばち",
+      "romaji": "sabachi",
+      "english": [
+        "comb"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "hasan",
+      "kana": "はさん",
+      "romaji": "hasan",
+      "english": [
+        "scissors"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "shiigu",
+      "kana": "しーぐ",
+      "romaji": "shiigu",
+      "english": [
+        "knife"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "hoochi",
+      "kana": "ほーち",
+      "romaji": "hoochi",
+      "english": [
+        "broom"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "haku",
+      "kana": "はく",
+      "romaji": "haku",
+      "english": [
+        "box"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "haai",
+      "kana": "はーい",
+      "romaji": "haai",
+      "english": [
+        "needle"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "chin",
+      "kana": "ちん",
+      "romaji": "chin",
+      "english": [
+        "kimono, clothes"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "shichaji",
+      "kana": "しちゃじ",
+      "romaji": "shichaji",
+      "english": [
+        "underwear"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "fuya",
+      "kana": "ふや",
+      "romaji": "fuya",
+      "english": [
+        "shoe"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "sumuchi",
+      "kana": "すむち",
+      "romaji": "sumuchi",
+      "english": [
+        "book"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kamihabu",
+      "kana": "かみはぶ",
+      "romaji": "kamihabu",
+      "english": [
+        "newspaper"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kanji",
+      "kana": "かんじ",
+      "romaji": "kanji",
+      "english": [
+        "Chinese character (kanji)"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "ieego",
+      "kana": "いぇーご",
+      "romaji": "ieego",
+      "english": [
+        "English; the English language"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "sashin",
+      "kana": "さしん",
+      "romaji": "sashin",
+      "english": [
+        "photograph"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "shigutu",
+      "kana": "仕事",
+      "romaji": "shigutu",
+      "english": [
+        "a job; an occupation; work"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "jiyuu",
+      "kana": "じゆー",
+      "romaji": "jiyuu",
+      "english": [
+        "freedom"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "shijin",
+      "kana": "しじん",
+      "romaji": "shijin",
+      "english": [
+        "nature"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "inuchi",
+      "kana": "いぬち",
+      "romaji": "inuchi",
+      "english": [
+        "life"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "imi",
+      "kana": "いみ",
+      "romaji": "imi",
+      "english": [
+        "dream"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "hanashi",
+      "kana": "はなし",
+      "romaji": "hanashi",
+      "english": [
+        "conversation, speech, story"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kuii",
+      "kana": "くぃー",
+      "romaji": "kuii",
+      "english": [
+        "voice"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "fikari",
+      "kana": "ふぃかり",
+      "romaji": "fikari",
+      "english": [
+        "light"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "chiburuyan",
+      "kana": "ちぶるやん",
+      "romaji": "chiburuyan",
+      "english": [
+        "headache"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "kiji",
+      "kana": "きじ",
+      "romaji": "kiji",
+      "english": [
+        "wound"
+      ],
+      "part_of_speech": "noun",
+      "category": "body",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "tii",
+      "kana": "鉄",
+      "romaji": "tii",
+      "english": [
+        "iron"
+      ],
+      "part_of_speech": "noun",
+      "category": "general",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    },
+    {
+      "headword": "tinsagu",
+      "kana": "てぃんさぐ",
+      "romaji": "tinsagu",
+      "english": [
+        "Impatiens balsamina; garden balsam"
+      ],
+      "part_of_speech": "noun",
+      "category": "nature",
+      "source": "Wiktionary (CC BY-SA 4.0) via Kaikki.org",
+      "license": "CC-BY-SA-4.0",
+      "status": "needs_validation"
+    }
+  ]
+}

@@ -1,27 +1,41 @@
 ---
 import Base from '../layouts/Base.astro';
-import dict from '../../data/dictionary.clean.json';
-const entries = dict.entries;
+import base from '../../data/dictionary.clean.json';
+import wik from '../../data/wiktionary-import.json';
+
+// Merge the hand-curated seed with the Wiktionary/Kaikki import, de-duplicating by headword.
+const seen = new Set();
+const entries = [];
+for (const e of [...base.entries, ...wik.entries]) {
+  const key = (e.headword || '').toLowerCase().trim();
+  if (!key || seen.has(key)) continue;
+  seen.add(key);
+  entries.push(e);
+}
+entries.sort((a, b) => a.headword.localeCompare(b.headword));
 const categories = [...new Set(entries.map((e) => e.category))].sort();
+const total = entries.length;
 ---
 <Base title="Dictionary — The Uchinaguchi Project" description="A growing, speaker-checked Uchinaaguchi (Okinawan) dictionary.">
   <section>
     <div class="container">
       <h1>Uchinaaguchi Dictionary</h1>
       <p style="color:var(--muted);max-width:680px">
-        A small, honest, growing dictionary of Uchinaaguchi (Central Okinawan). Search in
-        English or rōmaji, or filter by category.
+        {total} entries of Uchinaaguchi (Central Okinawan). Search in English or rōmaji,
+        or filter by category.
       </p>
 
       <div class="notice">
-        <strong>Work in progress.</strong> Every entry below is awaiting review by a fluent
-        speaker, and pronunciations show as "audio coming" until we record real Okinawan
-        voices — we never use synthetic Japanese audio. Spot something wrong?
+        <strong>Work in progress — every entry awaits fluent-speaker review.</strong>
+        Many entries are sourced from <a href="https://en.wiktionary.org" target="_blank" rel="noopener">Wiktionary</a>
+        (CC BY-SA 4.0, via <a href="https://kaikki.org/dictionary/Okinawan/" target="_blank" rel="noopener">Kaikki.org</a>),
+        and their romanization is best-effort until a fluent speaker checks it. Pronunciations show as
+        "audio coming" until we record real Okinawan voices — we never use synthetic Japanese audio.
         Corrections from speakers are always welcome.
       </div>
 
       <div class="dict-tools">
-        <input id="search" class="search" type="search" placeholder="Search words, meanings, rōmaji…" aria-label="Search the dictionary" />
+        <input id="search" class="search" type="search" placeholder="Search words, meanings, rōmaji, kana…" aria-label="Search the dictionary" />
         <div class="filters" id="filters">
           <button class="chip" data-cat="all" aria-pressed="true">All</button>
           {categories.map((c) => <button class="chip" data-cat={c} aria-pressed="false">{c}</button>)}
@@ -32,12 +46,15 @@ const categories = [...new Set(entries.map((e) => e.category))].sort();
 
       <div class="word-grid" id="grid">
         {entries.map((e) => (
-          <article class="word-card" data-cat={e.category} data-search={`${e.headword} ${e.romaji} ${e.english.join(' ')} ${e.category}`.toLowerCase()}>
+          <article class="word-card" data-cat={e.category} data-search={`${e.headword} ${e.romaji || ''} ${e.kana || ''} ${e.english.join(' ')} ${e.category}`.toLowerCase()}>
             <div class="word-head">
               <h2 class="headword">{e.headword}</h2>
               <span class="audio-soon" title="Real Okinawan audio is coming — we don't use synthetic Japanese TTS.">🔊 audio coming</span>
             </div>
-            <div class="romaji">{e.romaji} {e.ipa && <span class="ipa">{e.ipa}</span>}</div>
+            <div class="romaji">
+              {e.kana && <span class="kana">{e.kana}</span>}
+              {e.ipa && <span class="ipa">{e.ipa}</span>}
+            </div>
             <p class="gloss">{e.english.join('; ')}</p>
             {e.examples && e.examples.length > 0 && (
               <p class="example"><em>{e.examples[0].okinawan}</em> — {e.examples[0].english}</p>
@@ -50,6 +67,13 @@ const categories = [...new Set(entries.map((e) => e.category))].sort();
         ))}
       </div>
       <div class="no-results" id="noResults">No matches. Try a different word.</div>
+
+      <p style="color:var(--muted);font-size:.8rem;margin-top:2rem;border-top:1px solid rgba(29,52,97,.1);padding-top:1rem">
+        Dictionary data includes material from Wiktionary, used under
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>,
+        extracted via Kaikki.org (wiktextract). The Uchinaguchi Project adds, corrects, and validates entries
+        with the Okinawan community; the language belongs to its speakers.
+      </p>
     </div>
   </section>
 
