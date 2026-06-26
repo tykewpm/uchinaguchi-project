@@ -16,13 +16,13 @@ entries.sort((a, b) => a.headword.localeCompare(b.headword));
 const categories = [...new Set(entries.map((e) => e.category))].sort();
 const total = entries.length;
 ---
-<Base title="Dictionary — The Uchinaguchi Project" description="A growing, speaker-checked Uchinaaguchi (Okinawan) dictionary.">
+<Base title="Dictionary — The Uchinaguchi Project" description="A growing, speaker-checked Uchinaaguchi (Okinawan) dictionary. Look up the Okinawan word for any English term.">
   <section>
     <div class="container">
       <h1>Uchinaaguchi Dictionary</h1>
       <p style="color:var(--muted);max-width:680px">
-        {total} entries of Uchinaaguchi (Central Okinawan). Search in English or rōmaji,
-        or filter by category.
+        {total} entries of Uchinaaguchi (Central Okinawan). <strong>Type an English word</strong>
+        (like “water” or “thank you”) to find the Okinawan equivalent — or search in rōmaji or kana.
       </p>
 
       <div class="notice">
@@ -35,7 +35,7 @@ const total = entries.length;
       </div>
 
       <div class="dict-tools">
-        <input id="search" class="search" type="search" placeholder="Search words, meanings, rōmaji, kana…" aria-label="Search the dictionary" />
+        <input id="search" class="search" type="search" placeholder="Search in English (e.g. “water”), rōmaji, or kana…" aria-label="Search the dictionary" />
         <div class="filters" id="filters">
           <button class="chip" data-cat="all" aria-pressed="true">All</button>
           {categories.map((c) => <button class="chip" data-cat={c} aria-pressed="false">{c}</button>)}
@@ -46,7 +46,12 @@ const total = entries.length;
 
       <div class="word-grid" id="grid">
         {entries.map((e) => (
-          <article class="word-card" data-cat={e.category} data-search={`${e.headword} ${e.romaji || ''} ${e.kana || ''} ${e.english.join(' ')} ${e.category}`.toLowerCase()}>
+          <article
+            class="word-card"
+            data-cat={e.category}
+            data-en={e.english.join(' | ').toLowerCase()}
+            data-term={`${e.headword} ${e.romaji || ''} ${e.kana || ''}`.toLowerCase()}
+          >
             <div class="word-head">
               <h2 class="headword">{e.headword}</h2>
               <span class="audio-soon" title="Real Okinawan audio is coming — we don't use synthetic Japanese TTS.">🔊 audio coming</span>
@@ -81,22 +86,55 @@ const total = entries.length;
     const search = document.getElementById('search');
     const grid = document.getElementById('grid');
     const cards = Array.from(grid.querySelectorAll('.word-card'));
+    const original = cards.slice(); // remember the original (alphabetical) order
     const chips = Array.from(document.querySelectorAll('.chip'));
     const count = document.getElementById('count');
     const noResults = document.getElementById('noResults');
     let activeCat = 'all';
 
+    function esc(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+    // Higher score = better match. English-meaning matches rank above incidental ones.
+    function score(card, q) {
+      const en = card.dataset.en || '';        // english glosses, " | "-separated
+      const term = card.dataset.term || '';    // headword + romaji + kana
+      const glosses = en.split(' | ');
+      const wordRe = new RegExp('\\b' + esc(q) + '\\b');
+
+      if (glosses.includes(q)) return 100;                 // exact English meaning ("water")
+      if (term.split(/\s+/).includes(q)) return 95;        // exact Okinawan term
+      if (glosses.some((g) => g.startsWith(q + ' ') || g === q)) return 90; // gloss starts with it
+      if (wordRe.test(en)) return 80;                      // whole English word inside a phrase
+      if (term.startsWith(q)) return 70;                   // Okinawan term starts with query
+      if (en.includes(q)) return 50;                       // partial English
+      if (term.includes(q)) return 40;                     // partial Okinawan
+      return -1;                                           // no match
+    }
+
     function apply() {
       const q = (search.value || '').toLowerCase().trim();
-      let visible = 0;
+      const matched = [];
+
       cards.forEach((card) => {
-        const matchesCat = activeCat === 'all' || card.dataset.cat === activeCat;
-        const matchesQ = !q || card.dataset.search.includes(q);
-        const show = matchesCat && matchesQ;
-        card.style.display = show ? '' : 'none';
-        if (show) visible++;
+        const okCat = activeCat === 'all' || card.dataset.cat === activeCat;
+        if (!okCat) { card.style.display = 'none'; return; }
+        if (!q) { card.style.display = ''; return; }
+        const s = score(card, q);
+        if (s < 0) { card.style.display = 'none'; }
+        else { card.style.display = ''; matched.push([s, card]); }
       });
-      count.textContent = `${visible} word${visible === 1 ? '' : 's'}`;
+
+      if (q) {
+        // best matches first; stable by original order within the same score
+        matched.sort((a, b) => b[0] - a[0] || original.indexOf(a[1]) - original.indexOf(b[1]));
+        matched.forEach(([, card]) => grid.appendChild(card));
+      } else {
+        // restore original alphabetical order
+        original.forEach((card) => grid.appendChild(card));
+      }
+
+      const visible = cards.filter((c) => c.style.display !== 'none').length;
+      count.textContent = q ? `${visible} match${visible === 1 ? '' : 'es'} for “${search.value.trim()}”` : `${visible} words`;
       noResults.style.display = visible === 0 ? 'block' : 'none';
     }
 
