@@ -56,10 +56,25 @@ a { color: var(--deigo-red); }
 .nav { display: flex; gap: 1.25rem; }
 .nav a { color: var(--ryukyu-indigo); text-decoration: none; font-weight: 500; font-size: .98rem; }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--deigo-red); }
-.lang-switch { display: inline-flex; gap: .45rem; align-items: center; margin-left: .4rem; padding-left: .7rem; border-left: 1px solid rgba(29,52,97,.18); font-size: .8rem; }
-.lang-switch a { color: var(--muted); text-decoration: none; }
-.lang-switch a:hover { color: var(--ryukyu-indigo); }
-.lang-switch a.lang-current { color: var(--deigo-red); font-weight: 600; }
+.lang-select { display: inline-flex; align-items: center; gap: .3rem; margin-left: .5rem; padding-left: .7rem; border-left: 1px solid rgba(29,52,97,.18); }
+.lang-select .globe { font-size: .9rem; opacity: .7; }
+.lang-select select {
+  font-family: var(--font-body);
+  font-size: .85rem;
+  color: var(--ryukyu-indigo);
+  background: transparent;
+  border: 1px solid rgba(29,52,97,.2);
+  border-radius: 999px;
+  padding: .25rem 1.6rem .25rem .6rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%231D3461' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right .6rem center;
+}
+.lang-select select:hover { border-color: var(--deigo-red); }
+.lang-select select:focus { outline: 2px solid rgba(230,57,70,.4); outline-offset: 1px; }
 
 /* Hero */
 .hero { padding: 4.5rem 0 3rem; text-align: center; }

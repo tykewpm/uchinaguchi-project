@@ -40,11 +40,14 @@ const here = (l) => path.startsWith('dictionary') || path.startsWith('videos') |
           <a href={localizedPath(lang, 'dictionary')}>{t('nav.dictionary')}</a>
           <a href={localizedPath(lang, 'videos')}>{t('nav.videos')}</a>
           <a href={localizedPath(lang, 'phrasebook')}>{t('nav.phrasebook')}</a>
-          <span class="lang-switch" aria-label={t('lang.label')}>
-            {Object.entries(languages).map(([l, name]) => (
-              <a href={localizedPath(l, path)} class={l === lang ? 'lang-current' : ''} hreflang={hreflangMap[l]}>{name}</a>
-            ))}
-          </span>
+          <label class="lang-select" title={t('lang.label')}>
+            <span class="globe" aria-hidden="true">🌐</span>
+            <select aria-label={t('lang.label')} onchange="if(this.value){window.location.href=this.value}">
+              {Object.entries(languages).map(([l, name]) => (
+                <option value={localizedPath(l, path)} selected={l === lang}>{name}</option>
+              ))}
+            </select>
+          </label>
         </nav>
       </div>
     </header>
