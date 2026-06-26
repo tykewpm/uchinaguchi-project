@@ -1,46 +1,10 @@
 ---
 import Base from '../layouts/Base.astro';
-import dict from '../../data/dictionary.clean.json';
-import wik from '../../data/wiktionary-import.json';
-const keys = new Set();
-for (const e of [...dict.entries, ...wik.entries]) keys.add((e.headword || '').toLowerCase().trim());
-const wordCount = keys.size;
+import Home from '../components/pages/Home.astro';
+import { useTranslations } from '../i18n/ui.js';
+const lang = 'en';
+const t = useTranslations(lang);
 ---
-<Base title="The Uchinaguchi Project — Your language is waiting for you">
-  <section class="hero">
-    <div class="container">
-      <h1>Your language is waiting for you.</h1>
-      <p class="subline">Ichariba choodee — once we meet, we are family.</p>
-      <p class="lede">
-        Uchinaaguchi, the language of Okinawa, is endangered — but it isn't gone.
-        The Uchinaguchi Project is a community-rooted home for learning it: an honest,
-        speaker-checked dictionary today, and a real way to learn it together, tomorrow.
-      </p>
-      <a class="btn btn-primary" href="/dictionary">Explore the dictionary</a>
-    </div>
-  </section>
-
-  <section class="section-tint">
-    <div class="container">
-      <h2>Built honestly, with the community</h2>
-      <p style="max-width:680px;color:var(--muted)">
-        We're rebuilding from the ground up. Every word is sourced and attributed, and
-        nothing is marked "correct" until a fluent speaker has checked it — {wordCount} entries
-        and growing, each awaiting community review, rather than a pile of confident guesses. The
-        language belongs to the Okinawan community; this project is its steward, not its owner.
-      </p>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <h2>Why it matters</h2>
-      <p style="max-width:680px;color:var(--muted)">
-        UNESCO lists Uchinaaguchi as <em>definitely endangered</em>: most fluent speakers are
-        now elderly. Inspired by the revival of ʻŌlelo Hawaiʻi, we believe an accessible,
-        respectful, diaspora-friendly on-ramp can help a new generation reconnect — with the
-        language, and with each other.
-      </p>
-    </div>
-  </section>
+<Base lang={lang} path="" title={t('home.title')}>
+  <Home lang={lang} />
 </Base>

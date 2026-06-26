@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+import Dictionary from '../../components/pages/Dictionary.astro';
+import { useTranslations } from '../../i18n/ui.js';
+export function getStaticPaths() {
+  return [{ params: { lang: 'ja' } }, { params: { lang: 'es' } }, { params: { lang: 'pt-br' } }];
+}
+const { lang } = Astro.params;
+const t = useTranslations(lang);
+---
+<Base lang={lang} path="dictionary" title={`${t('dict.title')} — The Uchinaguchi Project`}>
+  <Dictionary lang={lang} />
+</Base>

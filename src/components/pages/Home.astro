@@ -1,0 +1,34 @@
+---
+import dict from '../../../data/dictionary.clean.json';
+import wik from '../../../data/wiktionary-import.json';
+import { useTranslations, localizedPath } from '../../i18n/ui.js';
+
+const { lang = 'en' } = Astro.props;
+const t = useTranslations(lang);
+
+const keys = new Set();
+for (const e of [...dict.entries, ...wik.entries]) keys.add((e.headword || '').toLowerCase().trim());
+const wordCount = keys.size;
+---
+<section class="hero">
+  <div class="container">
+    <h1>{t('home.tagline')}</h1>
+    <p class="subline">{t('home.ichariba')}</p>
+    <p class="lede">{t('home.lede')}</p>
+    <a class="btn btn-primary" href={localizedPath(lang, 'dictionary')}>{t('home.cta')}</a>
+  </div>
+</section>
+
+<section class="section-tint">
+  <div class="container">
+    <h2>{t('home.s1.title')}</h2>
+    <p style="max-width:680px;color:var(--muted)">{t('home.s1.body', { count: wordCount })}</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>{t('home.s2.title')}</h2>
+    <p style="max-width:680px;color:var(--muted)">{t('home.s2.body')}</p>
+  </div>
+</section>

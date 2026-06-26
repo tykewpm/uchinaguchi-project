@@ -1,0 +1,86 @@
+---
+import data from '../../../data/videos.curated.json';
+import { useTranslations } from '../../i18n/ui.js';
+
+const { lang = 'en' } = Astro.props;
+const t = useTranslations(lang);
+const videos = data.videos;
+const topics = [...new Set(videos.map((v) => v.topic))].sort();
+---
+<section>
+  <div class="container">
+    <h1>{t('videos.title')}</h1>
+    <p style="color:var(--muted);max-width:680px">{t('videos.intro')}</p>
+    <div class="notice">{t('videos.notice')}</div>
+
+    <div class="dict-tools">
+      <input id="vsearch" class="search" type="search" placeholder={t('videos.search')} aria-label={t('videos.search')} />
+      <div class="filters" id="vfilters">
+        <button class="chip" data-topic="all" aria-pressed="true">{t('common.all')}</button>
+        {topics.map((tp) => <button class="chip" data-topic={tp} aria-pressed="false">{tp}</button>)}
+      </div>
+    </div>
+    <p id="vcount" style="color:var(--muted);font-size:.9rem"></p>
+
+    <div class="video-grid" id="vgrid">
+      {videos.map((v) => (
+        <article class="video-card" data-topic={v.topic} data-search={`${v.title} ${v.channel} ${v.topic}`.toLowerCase()}>
+          <button class="video-thumb" data-id={v.youtubeId} aria-label={`Play: ${v.title}`}>
+            <img loading="lazy" src={`https://i.ytimg.com/vi/${v.youtubeId}/hqdefault.jpg`} alt="" />
+            <span class="play">▶</span>
+          </button>
+          <div class="video-meta">
+            <h3>{v.title}</h3>
+            <div class="ch">{v.channel}</div>
+            <div class="row">
+              <span class="cat-tag">{v.topic}</span>
+              {v.duration && <span style="font-size:.78rem;color:var(--muted)">⏱ {v.duration}</span>}
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+    <div class="no-results" id="vnoResults">{t('dict.noResults')}</div>
+  </div>
+</section>
+
+<script>
+  document.getElementById('vgrid').addEventListener('click', (e) => {
+    const btn = e.target.closest('.video-thumb');
+    if (!btn) return;
+    const id = btn.dataset.id;
+    const frame = document.createElement('iframe');
+    frame.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+    frame.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
+    frame.allowFullscreen = true;
+    btn.replaceWith(frame);
+  });
+
+  const search = document.getElementById('vsearch');
+  const cards = Array.from(document.querySelectorAll('#vgrid .video-card'));
+  const chips = Array.from(document.querySelectorAll('#vfilters .chip'));
+  const count = document.getElementById('vcount');
+  const noResults = document.getElementById('vnoResults');
+  let activeTopic = 'all';
+  function apply() {
+    const q = (search.value || '').toLowerCase().trim();
+    let visible = 0;
+    cards.forEach((card) => {
+      const okTopic = activeTopic === 'all' || card.dataset.topic === activeTopic;
+      const okQ = !q || card.dataset.search.includes(q);
+      const show = okTopic && okQ;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    count.textContent = `${visible}`;
+    noResults.style.display = visible === 0 ? 'block' : 'none';
+  }
+  search.addEventListener('input', apply);
+  chips.forEach((chip) => chip.addEventListener('click', () => {
+    chips.forEach((c) => c.setAttribute('aria-pressed', 'false'));
+    chip.setAttribute('aria-pressed', 'true');
+    activeTopic = chip.dataset.topic;
+    apply();
+  }));
+  apply();
+</script>

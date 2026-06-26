@@ -1,16 +1,29 @@
 ---
 import '../styles/global.css';
-const { title = 'The Uchinaguchi Project', description = 'Preserving and revitalizing Uchinaaguchi — the Okinawan language — for future generations.' } = Astro.props;
-const path = Astro.url.pathname;
-const isActive = (href) => (href === '/' ? path === '/' : path.startsWith(href));
+import { languages, defaultLang, useTranslations, localizedPath } from '../i18n/ui.js';
+
+const { lang = 'en', path = '', title, description } = Astro.props;
+const t = useTranslations(lang);
+
+const htmlLangMap = { en: 'en', ja: 'ja', es: 'es', 'pt-br': 'pt-BR' };
+const hreflangMap = { en: 'en', ja: 'ja', es: 'es', 'pt-br': 'pt-BR' };
+const site = 'https://uchinaguchiproject.org';
+
+const pageTitle = title || t('home.title');
+const pageDesc = description || t('home.lede');
+const here = (l) => path.startsWith('dictionary') || path.startsWith('videos') || path.startsWith('phrasebook');
 ---
 <!doctype html>
-<html lang="en">
+<html lang={htmlLangMap[lang]}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
-    <meta name="description" content={description} />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDesc} />
+    {Object.keys(languages).map((l) => (
+      <link rel="alternate" hreflang={hreflangMap[l]} href={site + localizedPath(l, path)} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={site + localizedPath(defaultLang, path)} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,12 +34,17 @@ const isActive = (href) => (href === '/' ? path === '/' : path.startsWith(href))
   <body>
     <header class="site-header">
       <div class="container">
-        <a class="brand" href="/"><span class="mark">🌺</span> Uchinaguchi Project</a>
+        <a class="brand" href={localizedPath(lang, '')}><span class="mark">🌺</span> Uchinaguchi Project</a>
         <nav class="nav">
-          <a href="/" aria-current={isActive('/') ? 'page' : undefined}>Home</a>
-          <a href="/dictionary" aria-current={isActive('/dictionary') ? 'page' : undefined}>Dictionary</a>
-          <a href="/videos" aria-current={isActive('/videos') ? 'page' : undefined}>Videos</a>
-          <a href="/phrasebook" aria-current={isActive('/phrasebook') ? 'page' : undefined}>Phrasebook</a>
+          <a href={localizedPath(lang, '')}>{t('nav.home')}</a>
+          <a href={localizedPath(lang, 'dictionary')}>{t('nav.dictionary')}</a>
+          <a href={localizedPath(lang, 'videos')}>{t('nav.videos')}</a>
+          <a href={localizedPath(lang, 'phrasebook')}>{t('nav.phrasebook')}</a>
+          <span class="lang-switch" aria-label={t('lang.label')}>
+            {Object.entries(languages).map(([l, name]) => (
+              <a href={localizedPath(l, path)} class={l === lang ? 'lang-current' : ''} hreflang={hreflangMap[l]}>{name}</a>
+            ))}
+          </span>
         </nav>
       </div>
     </header>
@@ -35,8 +53,8 @@ const isActive = (href) => (href === '/' ? path === '/' : path.startsWith(href))
     </main>
     <footer class="site-footer">
       <div class="container">
-        <strong>The Uchinaguchi Project</strong> — preserving Uchinaaguchi, the language of Okinawa, with and for the community.
-        <div class="ichariba">Ichariba choodee — once we meet, we are family. 🌺</div>
+        <strong>The Uchinaguchi Project</strong> — {t('footer.tagline')}
+        <div class="ichariba">{t('home.ichariba')} 🌺</div>
       </div>
     </footer>
   </body>

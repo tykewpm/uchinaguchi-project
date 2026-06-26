@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+import Videos from '../../components/pages/Videos.astro';
+import { useTranslations } from '../../i18n/ui.js';
+export function getStaticPaths() {
+  return [{ params: { lang: 'ja' } }, { params: { lang: 'es' } }, { params: { lang: 'pt-br' } }];
+}
+const { lang } = Astro.params;
+const t = useTranslations(lang);
+---
+<Base lang={lang} path="videos" title={`${t('videos.title')} — The Uchinaguchi Project`}>
+  <Videos lang={lang} />
+</Base>

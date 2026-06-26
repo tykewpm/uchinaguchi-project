@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+import Phrasebook from '../../components/pages/Phrasebook.astro';
+import { useTranslations } from '../../i18n/ui.js';
+export function getStaticPaths() {
+  return [{ params: { lang: 'ja' } }, { params: { lang: 'es' } }, { params: { lang: 'pt-br' } }];
+}
+const { lang } = Astro.params;
+const t = useTranslations(lang);
+---
+<Base lang={lang} path="phrasebook" title={`${t('phrase.title')} — The Uchinaguchi Project`}>
+  <Phrasebook lang={lang} />
+</Base>

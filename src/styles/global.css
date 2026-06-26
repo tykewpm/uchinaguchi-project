@@ -56,6 +56,10 @@ a { color: var(--deigo-red); }
 .nav { display: flex; gap: 1.25rem; }
 .nav a { color: var(--ryukyu-indigo); text-decoration: none; font-weight: 500; font-size: .98rem; }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--deigo-red); }
+.lang-switch { display: inline-flex; gap: .45rem; align-items: center; margin-left: .4rem; padding-left: .7rem; border-left: 1px solid rgba(29,52,97,.18); font-size: .8rem; }
+.lang-switch a { color: var(--muted); text-decoration: none; }
+.lang-switch a:hover { color: var(--ryukyu-indigo); }
+.lang-switch a.lang-current { color: var(--deigo-red); font-weight: 600; }
 
 /* Hero */
 .hero { padding: 4.5rem 0 3rem; text-align: center; }
