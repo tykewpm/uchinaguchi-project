@@ -17,6 +17,12 @@ for (const e of [...base.entries, ...wik.entries]) {
 entries.sort((a, b) => a.headword.localeCompare(b.headword));
 const categories = [...new Set(entries.map((e) => e.category))].sort();
 const total = entries.length;
+// Every entry carries a status; anything unknown is shown as needing validation.
+const statusKey = (s) => ({
+  attested: 'dict.statusAttested',
+  speaker_verified: 'dict.statusVerified',
+  proposed_reconstruction: 'dict.statusReconstruction',
+}[s] || 'dict.needsValidation');
 ---
 <section>
   <div class="container">
@@ -56,20 +62,49 @@ const total = entries.length;
           {e.examples && e.examples.length > 0 && (
             <p class="example"><em>{e.examples[0].okinawan}</em> — {e.examples[0].english}</p>
           )}
+          {e.source && (
+            <p class="source-line">{t('dict.source')}: {e.source}{e.license ? ` · ${e.license}` : ''}</p>
+          )}
           <div class="word-foot">
             <span class="cat-tag">{catLabel(lang, e.category)}</span>
-            <span class="badge-validate">{t('dict.needsValidation')}</span>
+            <span class={`badge-status status-${e.status || 'needs_validation'}`}>{t(statusKey(e.status))}</span>
           </div>
         </article>
       ))}
     </div>
     <div class="no-results" id="noResults">{t('dict.noResults')}</div>
 
+    <section class="ninjal" id="ninjal" aria-labelledby="ninjalTitle">
+      <h2 id="ninjalTitle">{t('dict.ninjalTitle')}</h2>
+      <p style="color:var(--muted);max-width:680px">{t('dict.ninjalIntro')}</p>
+      <p id="ninjalCount" style="color:var(--muted);font-size:.9rem">{t('dict.ninjalHint')}</p>
+      <div class="word-grid" id="ninjalGrid"></div>
+      <p style="color:var(--muted);font-size:.8rem;margin-top:1rem">
+        {t('dict.ninjalAttribution')} <a href="https://mmsrv.ninjal.ac.jp/okinawago/en/index.html" rel="noopener">mmsrv.ninjal.ac.jp</a> · <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener license">CC BY 4.0</a>
+      </p>
+    </section>
+
     <p style="color:var(--muted);font-size:.8rem;margin-top:2rem;border-top:1px solid rgba(29,52,97,.1);padding-top:1rem">{t('dict.attribution')}</p>
   </div>
 </section>
 
-<script define:vars={{ wordsLabel: t('dict.words'), matchesLabel: t('dict.matchesFor') }}>
+<script define:vars={{
+  wordsLabel: t('dict.words'),
+  matchesLabel: t('dict.matchesFor'),
+  ninjal: {
+    hint: t('dict.ninjalHint'),
+    loading: t('dict.ninjalLoading'),
+    error: t('dict.ninjalError'),
+    none: t('dict.ninjalNone'),
+    matches: t('dict.ninjalMatches'),
+    showing: t('dict.ninjalShowing'),
+    source: t('dict.source'),
+    sourceName: t('dict.ninjalSourceShort'),
+    page: t('dict.ninjalPage'),
+    status: t('dict.statusAttested'),
+    unclear: t('dict.ninjalUnclear'),
+  },
+}}>
   const search = document.getElementById('search');
   const grid = document.getElementById('grid');
   const cards = Array.from(grid.querySelectorAll('.word-card'));
@@ -124,6 +159,89 @@ const total = entries.length;
   }
 
   search.addEventListener('input', apply);
+
+  // NINJAL's dictionary is large, so it loads only when someone searches,
+  // and only the best matches are drawn.
+  const nGrid = document.getElementById('ninjalGrid');
+  const nCount = document.getElementById('ninjalCount');
+  const LIMIT = 40;
+  let nData = null;
+  let nLoading = null;
+  let nTimer = null;
+
+  const norm = (s) => s.toLowerCase().replace(/[ʔ?]/g, '?');
+  const romanGlottal = (s) => s.replace(/\?(?=[a-zA-Z'])/g, 'ʔ');
+
+  function loadNinjal() {
+    if (!nLoading) {
+      nCount.textContent = ninjal.loading;
+      nLoading = fetch('/data/ninjal-okinawago.json')
+        .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then((d) => {
+          nData = d.entries.map((e) => ({ ...e, key: norm(e.h), keyPlain: norm(e.h).replace(/\?/g, ''), mj: e.m.join(' ') }));
+        })
+        .catch(() => { nLoading = null; nCount.textContent = ninjal.error; });
+    }
+    return nLoading;
+  }
+
+  function nScore(e, q, qPlain) {
+    if (e.key === q || e.keyPlain === qPlain) return 100;
+    if (e.key.startsWith(q) || e.keyPlain.startsWith(qPlain)) return 80;
+    if (e.mj.startsWith(q)) return 70;
+    if (e.mj.includes(q)) return 50;
+    if (q.length > 2 && (e.key.includes(q) || e.keyPlain.includes(qPlain))) return 30;
+    return -1;
+  }
+
+  function el(tag, cls, text) {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text !== undefined) n.textContent = text;
+    return n;
+  }
+
+  function nCard(e) {
+    const card = el('article', 'word-card');
+    const head = el('div', 'word-head');
+    head.append(el('h3', 'headword', e.h));
+    if (e.p) head.append(el('span', 'cat-tag', e.p));
+    card.append(head);
+    card.append(el('p', 'gloss', romanGlottal(e.m.slice(0, 2).join(' / '))));
+    card.append(el('p', 'source-line', `${ninjal.source}: ${ninjal.sourceName}, ${ninjal.page} ${e.pg} · CC BY 4.0`));
+    const foot = el('div', 'word-foot');
+    foot.append(el('span', 'badge-status status-attested', ninjal.status));
+    if (e.f) foot.append(el('span', 'badge-status', ninjal.unclear));
+    card.append(foot);
+    return card;
+  }
+
+  async function applyNinjal() {
+    const raw = (search.value || '').trim();
+    nGrid.replaceChildren();
+    if (!raw) { nCount.textContent = ninjal.hint; return; }
+    await loadNinjal();
+    if (!nData || raw !== (search.value || '').trim()) return;
+    const q = norm(raw);
+    const qPlain = q.replace(/\?/g, '');
+    const hits = [];
+    for (const e of nData) {
+      const s = nScore(e, q, qPlain);
+      if (s >= 0) hits.push([s, e]);
+    }
+    hits.sort((a, b) => b[0] - a[0] || a[1].h.length - b[1].h.length);
+    const frag = document.createDocumentFragment();
+    hits.slice(0, LIMIT).forEach(([, e]) => frag.append(nCard(e)));
+    nGrid.replaceChildren(frag);
+    nCount.textContent = hits.length === 0
+      ? ninjal.none
+      : `${hits.length} ${ninjal.matches}` + (hits.length > LIMIT ? ` (${ninjal.showing} ${LIMIT})` : '');
+  }
+
+  search.addEventListener('input', () => {
+    clearTimeout(nTimer);
+    nTimer = setTimeout(applyNinjal, 200);
+  });
   chips.forEach((chip) => chip.addEventListener('click', () => {
     chips.forEach((c) => c.setAttribute('aria-pressed', 'false'));
     chip.setAttribute('aria-pressed', 'true');
