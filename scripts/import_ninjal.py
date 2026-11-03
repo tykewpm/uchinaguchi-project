@@ -27,7 +27,10 @@ LICENSE = "CC-BY-4.0"
 # attaches and "]" marks an accent fall; both are kept in `ninjal_form` and
 # left out of the display form.
 def display_form(raw: str) -> str:
-    return raw.replace("?", "ʔ").replace("=", "").replace("]", "")
+    # A few rows use full-width ＝ and ］ for the same markers.
+    for mark in ("=", "]", "＝", "］"):
+        raw = raw.replace(mark, "")
+    return raw.replace("?", "ʔ")
 
 
 def read_rows(path: Path):
