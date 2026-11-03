@@ -49,6 +49,7 @@ const statusKey = (s) => ({
     </div>
 
     <p id="count" style="color:var(--muted);font-size:.9rem"></p>
+    <p class="ninjal-jump" id="ninjalJump" hidden><a href="#ninjal"></a></p>
 
     <div class="word-grid" id="grid">
       {entries.map((e) => (
@@ -129,6 +130,13 @@ const statusKey = (s) => ({
   const count = document.getElementById('count');
   const noResults = document.getElementById('noResults');
   let activeCat = 'all';
+  // Shared with the NINJAL search below, so "no matches" only shows when
+  // neither list has anything.
+  let curatedVisible = 0;
+  let ninjalHits = 0;
+  function updateNoResults() {
+    noResults.style.display = curatedVisible === 0 && ninjalHits === 0 ? 'block' : 'none';
+  }
 
   function esc(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 
@@ -171,7 +179,8 @@ const statusKey = (s) => ({
       });
     }
     count.textContent = q ? `${visible} ${matchesLabel} “${search.value.trim()}”` : `${visible} ${wordsLabel}`;
-    noResults.style.display = visible === 0 ? 'block' : 'none';
+    curatedVisible = visible;
+    updateNoResults();
   }
 
   search.addEventListener('input', apply);
@@ -186,6 +195,8 @@ const statusKey = (s) => ({
   const nPrev = document.getElementById('ninjalPrev');
   const nNext = document.getElementById('ninjalNext');
   const nPageInfo = document.getElementById('ninjalPageInfo');
+  const nJump = document.getElementById('ninjalJump');
+  const nJumpLink = nJump.querySelector('a');
   const PAGE = 60;
   let nData = null;
   let nLoading = null;
@@ -308,6 +319,11 @@ const statusKey = (s) => ({
     nPrev.disabled = nPage === 0;
     nNext.disabled = nPage >= pages - 1;
     nPageInfo.textContent = `${fmt(nPage + 1)} / ${fmt(pages)}`;
+    // Point to NINJAL's matches from the top of the page, where people are looking.
+    ninjalHits = raw ? nList.length : 0;
+    nJump.hidden = ninjalHits === 0;
+    nJumpLink.textContent = `${fmt(ninjalHits)} ${ninjal.matches} ↓`;
+    updateNoResults();
     if (scroll) nSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 

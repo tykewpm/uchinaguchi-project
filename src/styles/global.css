@@ -160,3 +160,5 @@ section { padding: 2.5rem 0; }
 .ninjal-pager { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-top: 1.25rem; color: var(--muted); font-size: .9rem; }
 .ninjal-pager .chip:disabled { opacity: .4; cursor: default; }
 .ninjal-pager[hidden] { display: none; }
+.ninjal-jump { margin: -.5rem 0 1rem; font-size: .95rem; font-weight: 600; }
+.ninjal-jump[hidden] { display: none; }
