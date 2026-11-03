@@ -1,6 +1,7 @@
 ---
 import base from '../../../data/dictionary.clean.json';
 import wik from '../../../data/wiktionary-import.json';
+import { readFileSync } from 'node:fs';
 import { useTranslations, catLabel } from '../../i18n/ui.js';
 
 const { lang = 'en' } = Astro.props;
@@ -17,6 +18,11 @@ for (const e of [...base.entries, ...wik.entries]) {
 entries.sort((a, b) => a.headword.localeCompare(b.headword));
 const categories = [...new Set(entries.map((e) => e.category))].sort();
 const total = entries.length;
+// NINJAL's dictionary is too big to put in the page, so the browser loads it.
+// Count it here so the page can say how many words there are before it loads.
+const ninjalTotal = JSON.parse(readFileSync('public/data/ninjal-okinawago.json', 'utf-8')).entries.length;
+const numLocale = { en: 'en-US', ja: 'ja-JP', es: 'es-ES', 'pt-br': 'pt-BR' }[lang] || 'en-US';
+const ninjalTotalText = ninjalTotal.toLocaleString(numLocale);
 // Every entry carries a status; anything unknown is shown as needing validation.
 const statusKey = (s) => ({
   attested: 'dict.statusAttested',
@@ -28,6 +34,8 @@ const statusKey = (s) => ({
   <div class="container">
     <h1>{t('dict.title')}</h1>
     <p style="color:var(--muted);max-width:680px" set:html={t('dict.intro', { count: total }).replace('Type an English word', '<strong>Type an English word</strong>')} />
+
+    <p class="ninjal-summary">{t('dict.ninjalSummary', { count: ninjalTotalText })} <a href="#ninjal">{t('dict.ninjalBrowse')} ↓</a></p>
 
     <div class="notice">{t('dict.notice')}</div>
     <p style="color:var(--muted);font-size:.85rem;margin:-.5rem 0 1rem">{t('dict.englishNote')}</p>
@@ -41,6 +49,7 @@ const statusKey = (s) => ({
     </div>
 
     <p id="count" style="color:var(--muted);font-size:.9rem"></p>
+    <p class="ninjal-jump" id="ninjalJump" hidden><a href="#ninjal"></a></p>
 
     <div class="word-grid" id="grid">
       {entries.map((e) => (
@@ -76,9 +85,15 @@ const statusKey = (s) => ({
 
     <section class="ninjal" id="ninjal" aria-labelledby="ninjalTitle">
       <h2 id="ninjalTitle">{t('dict.ninjalTitle')}</h2>
-      <p style="color:var(--muted);max-width:680px">{t('dict.ninjalIntro')}</p>
-      <p id="ninjalCount" style="color:var(--muted);font-size:.9rem">{t('dict.ninjalHint')}</p>
+      <p style="color:var(--muted);max-width:680px">{t('dict.ninjalIntro', { count: ninjalTotalText })}</p>
+      <div class="filters ninjal-letters" id="ninjalLetters"></div>
+      <p id="ninjalCount" style="color:var(--muted);font-size:.9rem">{t('dict.ninjalLoading')}</p>
       <div class="word-grid" id="ninjalGrid"></div>
+      <nav class="ninjal-pager" id="ninjalPager" hidden>
+        <button class="chip" type="button" id="ninjalPrev">← {t('dict.ninjalPrev')}</button>
+        <span id="ninjalPageInfo"></span>
+        <button class="chip" type="button" id="ninjalNext">{t('dict.ninjalNext')} →</button>
+      </nav>
       <p style="color:var(--muted);font-size:.8rem;margin-top:1rem">
         {t('dict.ninjalAttribution')} <a href="https://mmsrv.ninjal.ac.jp/okinawago/en/index.html" rel="noopener">mmsrv.ninjal.ac.jp</a> · <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener license">CC BY 4.0</a>
       </p>
@@ -97,7 +112,9 @@ const statusKey = (s) => ({
     error: t('dict.ninjalError'),
     none: t('dict.ninjalNone'),
     matches: t('dict.ninjalMatches'),
-    showing: t('dict.ninjalShowing'),
+    range: t('dict.ninjalRange'),
+    allLetters: t('dict.ninjalAllLetters'),
+    numLocale,
     source: t('dict.source'),
     sourceName: t('dict.ninjalSourceShort'),
     page: t('dict.ninjalPage'),
@@ -113,6 +130,13 @@ const statusKey = (s) => ({
   const count = document.getElementById('count');
   const noResults = document.getElementById('noResults');
   let activeCat = 'all';
+  // Shared with the NINJAL search below, so "no matches" only shows when
+  // neither list has anything.
+  let curatedVisible = 0;
+  let ninjalHits = 0;
+  function updateNoResults() {
+    noResults.style.display = curatedVisible === 0 && ninjalHits === 0 ? 'block' : 'none';
+  }
 
   function esc(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 
@@ -155,22 +179,37 @@ const statusKey = (s) => ({
       });
     }
     count.textContent = q ? `${visible} ${matchesLabel} “${search.value.trim()}”` : `${visible} ${wordsLabel}`;
-    noResults.style.display = visible === 0 ? 'block' : 'none';
+    curatedVisible = visible;
+    updateNoResults();
   }
 
   search.addEventListener('input', apply);
 
-  // NINJAL's dictionary is large, so it loads only when someone searches,
-  // and only the best matches are drawn.
+  // NINJAL's dictionary is large, so it loads when the section comes near
+  // the screen or someone searches. Everyone can browse all of it a page at a time.
+  const nSection = document.getElementById('ninjal');
   const nGrid = document.getElementById('ninjalGrid');
   const nCount = document.getElementById('ninjalCount');
-  const LIMIT = 40;
+  const nLetters = document.getElementById('ninjalLetters');
+  const nPager = document.getElementById('ninjalPager');
+  const nPrev = document.getElementById('ninjalPrev');
+  const nNext = document.getElementById('ninjalNext');
+  const nPageInfo = document.getElementById('ninjalPageInfo');
+  const nJump = document.getElementById('ninjalJump');
+  const nJumpLink = nJump.querySelector('a');
+  const PAGE = 60;
   let nData = null;
   let nLoading = null;
   let nTimer = null;
+  let nList = [];
+  let nPage = 0;
+  let nLetter = 'all';
 
+  const fmt = (n) => n.toLocaleString(ninjal.numLocale);
   const norm = (s) => s.toLowerCase().replace(/[ʔ?]/g, '?');
   const romanGlottal = (s) => s.replace(/\?(?=[a-zA-Z'])/g, 'ʔ');
+  // Headwords that start with a hyphen are suffixes and endings; they get their own group.
+  const initial = (e) => (/^[a-z]/.test(e.keyPlain) ? e.keyPlain[0] : e.keyPlain.startsWith('-') ? '-' : '#');
 
   function loadNinjal() {
     if (!nLoading) {
@@ -178,11 +217,33 @@ const statusKey = (s) => ({
       nLoading = fetch('/data/ninjal-okinawago.json')
         .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
         .then((d) => {
-          nData = d.entries.map((e) => ({ ...e, key: norm(e.h), keyPlain: norm(e.h).replace(/\?/g, ''), mj: e.m.join(' ') }));
+          nData = d.entries.map((e) => {
+            const key = norm(e.h);
+            return { ...e, key, keyPlain: key.replace(/\?/g, ''), mj: e.m.join(' ') };
+          });
+          buildLetters();
+          applyNinjal();
         })
         .catch(() => { nLoading = null; nCount.textContent = ninjal.error; });
     }
     return nLoading;
+  }
+
+  function buildLetters() {
+    const letters = [...new Set(nData.map(initial))].sort();
+    const make = (value, label) => {
+      const b = el('button', 'chip', label);
+      b.type = 'button';
+      b.dataset.letter = value;
+      b.setAttribute('aria-pressed', value === nLetter ? 'true' : 'false');
+      b.addEventListener('click', () => {
+        nLetter = value;
+        nLetters.querySelectorAll('.chip').forEach((c) => c.setAttribute('aria-pressed', c === b ? 'true' : 'false'));
+        applyNinjal();
+      });
+      return b;
+    };
+    nLetters.replaceChildren(make('all', ninjal.allLetters), ...letters.map((l) => make(l, l === '-' ? '-…' : l.toUpperCase())));
   }
 
   function nScore(e, q, qPlain) {
@@ -216,27 +277,69 @@ const statusKey = (s) => ({
     return card;
   }
 
-  async function applyNinjal() {
+  // Rebuild the list for the current search and letter, then show page one.
+  function applyNinjal() {
+    if (!nData) { loadNinjal(); return; }
     const raw = (search.value || '').trim();
-    nGrid.replaceChildren();
-    if (!raw) { nCount.textContent = ninjal.hint; return; }
-    await loadNinjal();
-    if (!nData || raw !== (search.value || '').trim()) return;
-    const q = norm(raw);
-    const qPlain = q.replace(/\?/g, '');
-    const hits = [];
-    for (const e of nData) {
-      const s = nScore(e, q, qPlain);
-      if (s >= 0) hits.push([s, e]);
+    const pool = nLetter === 'all' ? nData : nData.filter((e) => initial(e) === nLetter);
+    if (raw) {
+      const q = norm(raw);
+      const qPlain = q.replace(/\?/g, '');
+      const hits = [];
+      for (const e of pool) {
+        const s = nScore(e, q, qPlain);
+        if (s >= 0) hits.push([s, e]);
+      }
+      hits.sort((a, b) => b[0] - a[0] || a[1].h.length - b[1].h.length);
+      nList = hits.map(([, e]) => e);
+    } else {
+      nList = pool; // dictionary order, as NINJAL published it
     }
-    hits.sort((a, b) => b[0] - a[0] || a[1].h.length - b[1].h.length);
-    const frag = document.createDocumentFragment();
-    hits.slice(0, LIMIT).forEach(([, e]) => frag.append(nCard(e)));
-    nGrid.replaceChildren(frag);
-    nCount.textContent = hits.length === 0
-      ? ninjal.none
-      : `${hits.length} ${ninjal.matches}` + (hits.length > LIMIT ? ` (${ninjal.showing} ${LIMIT})` : '');
+    nPage = 0;
+    renderPage(false);
   }
+
+  function renderPage(scroll) {
+    const pages = Math.max(1, Math.ceil(nList.length / PAGE));
+    nPage = Math.min(Math.max(nPage, 0), pages - 1);
+    const from = nPage * PAGE;
+    const shown = nList.slice(from, from + PAGE);
+    const frag = document.createDocumentFragment();
+    shown.forEach((e) => frag.append(nCard(e)));
+    nGrid.replaceChildren(frag);
+    const range = ninjal.range
+      .replace('{from}', fmt(nList.length ? from + 1 : 0))
+      .replace('{to}', fmt(from + shown.length))
+      .replace('{total}', fmt(nList.length));
+    const raw = (search.value || '').trim();
+    nCount.textContent = nList.length === 0
+      ? ninjal.none
+      : raw ? `${fmt(nList.length)} ${ninjal.matches} · ${range}` : range;
+    nPager.hidden = pages <= 1;
+    nPrev.disabled = nPage === 0;
+    nNext.disabled = nPage >= pages - 1;
+    nPageInfo.textContent = `${fmt(nPage + 1)} / ${fmt(pages)}`;
+    // Point to NINJAL's matches from the top of the page, where people are looking.
+    ninjalHits = raw ? nList.length : 0;
+    nJump.hidden = ninjalHits === 0;
+    nJumpLink.textContent = `${fmt(ninjalHits)} ${ninjal.matches} ↓`;
+    updateNoResults();
+    if (scroll) nSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  nPrev.addEventListener('click', () => { nPage--; renderPage(true); });
+  nNext.addEventListener('click', () => { nPage++; renderPage(true); });
+
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((seen) => {
+      if (seen.some((s) => s.isIntersecting)) { io.disconnect(); loadNinjal(); }
+    }, { rootMargin: '800px 0px' });
+    io.observe(nSection);
+  } else {
+    loadNinjal();
+  }
+  if (location.hash === '#ninjal') loadNinjal();
+  window.addEventListener('hashchange', () => { if (location.hash === '#ninjal') loadNinjal(); });
 
   search.addEventListener('input', () => {
     clearTimeout(nTimer);
